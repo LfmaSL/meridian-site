@@ -1,0 +1,48 @@
+<%- include('../partials/head', { title: c.privacy_page.title, locale, c, cfg, supported, page: 'privacy' }) %>
+<%- include('../partials/nav',  { locale, c, cfg, supported, page: 'privacy', user }) %>
+
+<div class="privacy-wrap" style="margin: 2rem auto;">
+  <a class="back" href="/<%= locale %>/"><%- c.privacy_page.back_link %></a>
+  <h1><%= c.privacy_page.h1 %></h1>
+  <p class="meta">
+    Effective date: <%= c.privacy_page.effective_date %>
+    &nbsp;·&nbsp;
+    Last updated: <%= c.privacy_page.last_updated %>
+  </p>
+
+  <h2><%= c.privacy_page.s1_title %></h2>
+  <p><%= c.privacy_page.s1_body %></p>
+
+  <h2><%= c.privacy_page.s2_title %></h2>
+  <ul>
+    <% c.privacy_page.s2_items.forEach(function(item) { %>
+      <li><%= item %></li>
+    <% }); %>
+  </ul>
+
+  <h2><%= c.privacy_page.s3_title %></h2>
+  <p><%= c.privacy_page.s3_body %></p>
+
+  <h2><%= c.privacy_page.s4_title %></h2>
+  <p><%= c.privacy_page.s4_body %></p>
+
+  <h2><%= c.privacy_page.s5_title %></h2>
+  <p><%= c.privacy_page.s5_body %></p>
+
+  <h2><%= c.privacy_page.s6_title %></h2>
+  <p><%= c.privacy_page.s6_body %></p>
+
+  <h2><%= c.privacy_page.s7_title %></h2>
+  <p><%= c.privacy_page.s7_body %></p>
+
+  <h2><%= c.privacy_page.s8_title %></h2>
+  <p><%= c.privacy_page.s8_body %></p>
+
+  <h2><%= c.privacy_page.s9_title %></h2>
+  <p><%= c.privacy_page.s9_body %></p>
+
+  <h2><%= c.privacy_page.s10_title %></h2>
+  <p><%= c.privacy_page.s10_body %> <a href="mailto:<%= cfg.support_email %>"><%= cfg.support_email %></a></p>
+</div>
+
+<%- include('../partials/footer', { locale, c, cfg, supported, page: 'privacy' }) %>

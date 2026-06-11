@@ -2,17 +2,23 @@
 
 Public marketing site for [Meridian](https://github.com/LfmaSL/Meridian).
 
-Served via GitHub Pages. No build step — plain HTML/CSS.
+- **Domain**: meridian.pt (PTisp)
+- **Hosting**: Railway
+- **Stack**: plain HTML/CSS — no build step, edit files directly
 
 ## Files
 
-- `index.html` — landing page (features, pricing, download)
+- `index.html` — single-page site (hero, features, pricing, download)
 - `privacy.html` — Privacy Policy (required for Paddle merchant approval)
-- `CNAME` — custom domain (update to real domain before enabling Pages)
+- `CNAME` — custom domain config
 
-## TODOs before launch
+## Before launch
 
-- [ ] Register domain; update `CNAME`
-- [ ] Replace `yourdomain.com` email placeholders in `index.html` and `privacy.html`
-- [ ] Replace "Coming soon" pricing buttons with real Paddle checkout links (Phase 4)
-- [ ] Enable GitHub Pages: repo Settings → Pages → branch `main`, folder `/` (root)
+- [ ] Update `CNAME` → `meridian.pt`
+- [ ] Fix pricing: €29 → €39 (Base), €49 → €59 (Full) in pricing cards + buy buttons
+- [ ] Fix Trial feature list: remove "encrypted backup export" (Trial = JSON export only)
+- [ ] Add v1.1.0 features: task reminders, habit reminders, medication mode, toast notifications, debt/goal alerts
+- [ ] Replace placeholder buy button `href="#"` with real Paddle checkout URLs (after Paddle products created)
+- [ ] Replace placeholder download `href="#"` with telemetry /download URL (after CF Worker deployed)
+- [ ] Replace `support@yourdomain.com` with real support email in footer + `privacy.html`
+- [ ] Deploy to Railway; configure meridian.pt custom domain

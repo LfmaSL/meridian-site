@@ -1,0 +1,36 @@
+<nav>
+  <a href="/<%= locale %>/" class="nav-brand">
+    <svg width="28" height="28" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+      <rect width="512" height="512" rx="100" fill="#14b8a6"/>
+      <path d="M 120 390 L 120 160 L 256 290 L 392 160 L 392 390" stroke="white" stroke-width="64" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    Meridian
+  </a>
+
+  <div class="nav-links">
+    <a href="/<%= locale %>/#story"><%- c.nav ? c.nav.why : 'Why Meridian' %></a>
+    <a href="/<%= locale %>/#import"><%- c.nav ? c.nav.import : 'Import' %></a>
+    <a href="/<%= locale %>/#finance"><%- c.nav ? c.nav.features : 'Features' %></a>
+    <a href="/<%= locale %>/#pricing"><%- c.nav ? c.nav.pricing : 'Pricing' %></a>
+    <a href="/<%= locale %>/#download"><%- c.nav ? c.nav.download : 'Download' %></a>
+  </div>
+
+  <div class="nav-controls">
+    <div class="lang-switcher">
+      <% supported.forEach(function(lang) { %>
+        <a href="/<%= lang %>/<%= page || '' %>" class="lang-btn<%= lang === locale ? ' active' : '' %>"><%= lang.toUpperCase() %></a>
+      <% }); %>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+      </svg>
+      <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/>
+      </svg>
+    </button>
+    <% if (user) { %>
+      <a href="/admin" class="btn btn-outline btn-sm">Admin</a>
+    <% } %>
+  </div>
+</nav>

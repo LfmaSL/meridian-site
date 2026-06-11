@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= c.meta ? c.meta.title : title %></title>
+  <% if (c.meta) { %><meta name="description" content="<%= c.meta.description %>" /><% } %>
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- No-flash theme init -->
+  <script>(function(){var s=localStorage.getItem('meridian-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
+</head>
+<body>
