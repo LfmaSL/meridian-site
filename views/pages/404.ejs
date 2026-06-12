@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= locale === 'pt' ? 'Página não encontrada — Meridian' : 'Page not found — Meridian' %></title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script>(function(){var s=localStorage.getItem('meridian-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
+</head>
+<body>
+  <div class="notfound">
+    <svg width="48" height="48" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+      <rect width="512" height="512" rx="100" fill="#14b8a6"/>
+      <path d="M 120 390 L 120 160 L 256 290 L 392 160 L 392 390" stroke="white" stroke-width="64" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <h1>404</h1>
+    <p><%= locale === 'pt' ? 'Esta página não existe.' : 'This page does not exist.' %></p>
+    <a href="/<%= locale %>/" class="btn btn-primary"><%= locale === 'pt' ? 'Voltar ao início' : 'Back to home' %></a>
+  </div>
+</body>
+</html>

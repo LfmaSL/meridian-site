@@ -1,5 +1,5 @@
 <%- include('../partials/head', { title: c.meta.title, locale, c, cfg, supported, page: '' }) %>
-<%- include('../partials/nav',  { locale, c, cfg, supported, page: '', user }) %>
+<%- include('../partials/nav',  { locale, c, cfg, supported, page: '' }) %>
 
 <!-- Hero -->
 <div class="hero">
@@ -221,7 +221,7 @@
       <!-- Trial -->
       <div class="pricing-card">
         <p class="tier"><%= c.pricing.trial_badge %></p>
-        <p class="price">Free</p>
+        <p class="price"><%= c.pricing.trial_price %></p>
         <p class="price-note"><%= c.pricing.trial_price_note %></p>
         <ul>
           <% c.pricing.trial_features_yes.forEach(function(f) { %><li class="yes"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><%= f %></li><% }); %>

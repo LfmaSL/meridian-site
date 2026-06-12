@@ -1,0 +1,18 @@
+<%- include('../partials/head', { title: c.terms_page.title, locale, c, cfg, supported, page: 'terms' }) %>
+<%- include('../partials/nav',  { locale, c, cfg, supported, page: 'terms' }) %>
+
+<div class="privacy-wrap" style="margin: 2rem auto;">
+  <a class="back" href="/<%= locale %>/"><%- c.terms_page.back_link %></a>
+  <h1><%= c.terms_page.h1 %></h1>
+  <p class="meta">Effective date: <%= c.terms_page.effective_date %></p>
+
+  <% c.terms_page.sections.forEach(function(s) { %>
+    <h2><%= s.title %></h2>
+    <p><%= s.body %></p>
+  <% }); %>
+
+  <h2><%= c.privacy_page.s10_title %></h2>
+  <p><%= c.terms_page.contact_lead %> <a href="mailto:<%= cfg.support_email %>"><%= cfg.support_email %></a></p>
+</div>
+
+<%- include('../partials/footer', { locale, c, cfg, supported, page: 'terms' }) %>

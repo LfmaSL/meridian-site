@@ -1,61 +1,50 @@
-const express  = require('express');
-const router   = express.Router({ strict: true });
-const db       = require('../db/setup');
-const { localeMiddleware, detectLocale, SUPPORTED, DEFAULT } = require('../middleware/locale');
+const express = require('express');
+const router  = express.Router({ strict: true });
+const { localeMiddleware, detectLocale, SUPPORTED } = require('../middleware/locale');
+const cfg     = require('../config');
+
+const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
+const PAGES    = ['', 'privacy', 'terms', 'refunds'];
 
 function getContent(locale) {
-  const rows = db.prepare('SELECT key, value FROM content_text WHERE locale = ?').all(locale);
-  const c = {};
-  for (const r of rows) c[r.key] = JSON.parse(r.value);
-  return c;
+  return require(`../locales/${locale}.json`);
 }
 
-function getConfig() {
-  const rows = db.prepare('SELECT key, value FROM content_config').all();
-  const cfg = {};
-  for (const r of rows) cfg[r.key] = r.value;
-  return cfg;
-}
-
-// Root: redirect to preferred locale
 router.get('/', (req, res) => {
-  const locale = detectLocale(req);
-  res.redirect(301, `/${locale}/`);
+  res.redirect(301, `/${detectLocale(req)}/`);
 });
 
-// Locale root
+router.get('/sitemap.xml', (req, res) => {
+  const urls = SUPPORTED.flatMap((l) => PAGES.map((p) => `${BASE_URL}/${l}/${p}`));
+  const xml =
+    '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n') +
+    '\n</urlset>\n';
+  res.type('application/xml').send(xml);
+});
+
 router.get('/:locale', localeMiddleware, (req, res, next) => {
   if (!SUPPORTED.includes(req.params.locale)) return next();
   res.redirect(301, `/${req.params.locale}/`);
 });
 
-// Marketing page
 router.get('/:locale/', localeMiddleware, (req, res, next) => {
   if (!SUPPORTED.includes(req.params.locale)) return next();
   const { locale } = res.locals;
-  res.render('pages/index', {
-    c:      getContent(locale),
-    cfg:    getConfig(),
-    locale,
-    user:   req.user || null,
-  });
+  res.render('pages/index', { c: getContent(locale), cfg, locale });
 });
 
-// Privacy page
-router.get('/:locale/privacy', localeMiddleware, (req, res, next) => {
-  if (!SUPPORTED.includes(req.params.locale)) return next();
-  const { locale } = res.locals;
-  res.render('pages/privacy', {
-    c:      getContent(locale),
-    cfg:    getConfig(),
-    locale,
-    user:   req.user || null,
+for (const page of ['privacy', 'terms', 'refunds']) {
+  router.get(`/:locale/${page}`, localeMiddleware, (req, res, next) => {
+    if (!SUPPORTED.includes(req.params.locale)) return next();
+    const { locale } = res.locals;
+    res.render(`pages/${page}`, { c: getContent(locale), cfg, locale });
   });
-});
 
-// Legacy redirects for old static paths
-router.get('/privacy', (req, res) => {
-  res.redirect(301, `/${detectLocale(req)}/privacy`);
-});
+  router.get(`/${page}`, (req, res) => {
+    res.redirect(301, `/${detectLocale(req)}/${page}`);
+  });
+}
 
 module.exports = router;

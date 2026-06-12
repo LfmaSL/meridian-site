@@ -14,7 +14,7 @@
     "eyebrow": "Local-first · Sem contas · Sem cloud",
     "h1_line1": "Finanças, saúde e hábitos.",
     "h1_line2": "Privados, automatizados, teus.",
-    "subhead": "Importa os extratos do teu banco, deixe o Meridian categorizar e acompanhar tudo, e mantenha o teu panorama financeiro completo na tua própria máquina — sem contas, sem cloud, sem dados entregues a ninguém.",
+    "subhead": "Importa os extratos do teu banco, deixa o Meridian categorizar e acompanhar tudo, e mantém o teu panorama financeiro completo na tua própria máquina — sem contas, sem cloud, sem dados entregues a ninguém.",
     "cta_primary": "Iniciar teste gratuito",
     "cta_secondary": "Ver preços"
   },
@@ -42,11 +42,11 @@
   "import_sec": {
     "label": "Importação",
     "title": "Compatível com o ficheiro do teu banco",
-    "sub": "Arrasta um export do teu banco. O Meridian lê as colunas, mapeia-as para os campos corretos e recorda o seu formato para as próximas vezes — as importações seguintes precisam de um clique.",
+    "sub": "Arrasta um export do teu banco. O Meridian lê as colunas, mapeia-as para os campos corretos e recorda o teu formato para as próximas vezes — as importações seguintes precisam de um clique.",
     "card1_title": "XLS e XLSX",
     "card1_body": "Qualquer export de folha de cálculo de qualquer banco. Um mapeador de colunas permite atribuir os campos de data, descrição, montante e saldo a partir da linha de cabeçalho detetada. Suporte a livros com múltiplas folhas — o Meridian escolhe a folha certa automaticamente.",
     "card2_title": "Extratos em PDF",
-    "card2_body": "Suporta extratos bancários em PDF com múltiplas páginas e colunas. A validação da cadeia de saldos corre após cada análise para detetar lacunas antes de chegarem aos teus registos — para saber imediatamente se faltou uma página.",
+    "card2_body": "Suporta extratos bancários em PDF com múltiplas páginas e colunas. A validação da cadeia de saldos corre após cada análise para detetar lacunas antes de chegarem aos teus registos — para saberes imediatamente se faltou uma página.",
     "card3_title": "Exports em texto",
     "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido automaticamente a partir do histórico de transações existente — sem ajuste manual de datas.",
     "note": "A deteção de duplicados corre em cada importação — reenviar o mesmo ficheiro é sempre seguro. A contagem de importados e duplicados ignorados é mostrada após cada execução."
@@ -70,8 +70,8 @@
       "Credenciais guardadas apenas no dispositivo",
       "Não é necessário email para usar a app"
     ],
-    "card3_title": "É dono de tudo",
-    "card3_body": "Exporta o teu conjunto de dados completo como JSON a qualquer momento. Migre para uma nova máquina, audite-o, faça backup — o Meridian nunca retém os teus dados.",
+    "card3_title": "És dono de tudo",
+    "card3_body": "Exporta o teu conjunto de dados completo como JSON a qualquer momento. Migra para uma nova máquina, audita-o, faz backup — o Meridian nunca retém os teus dados.",
     "card3_items": [
       "Export JSON completo (todos os planos)",
       "Import / restauro JSON (Base e Full)",
@@ -85,7 +85,7 @@
     "row1_label": "Dia-a-dia",
     "row2_label": "Planeamento financeiro",
     "card1_title": "Orçamentos mensais",
-    "card1_body": "Defina metas por categoria. Cada importação atualiza as barras de progresso — as categorias acima do orçamento surgem imediatamente, com um clique para detalhar as transações responsáveis.",
+    "card1_body": "Define metas por categoria. Cada importação atualiza as barras de progresso — as categorias acima do orçamento surgem imediatamente, com um clique para detalhar as transações responsáveis.",
     "card1_tier": "Todos os planos",
     "card2_title": "Comparação ano-a-ano",
     "card2_body": "Cada vista mensal mostra o mesmo período do ano anterior ao lado, com variação percentual. A deriva dos gastos é visível de relance — sem tabelas dinâmicas, sem cálculos manuais.",
@@ -103,7 +103,7 @@
     "card6_body": "Média móvel de seis meses, calculada automaticamente a partir do histórico de rendimentos e despesas. Sem fórmula para manter — atualiza em cada importação e mostra a tendência ao longo do tempo.",
     "card6_tier": "Full",
     "card7_title": "Marcos de objetivos e dívidas",
-    "card7_body": "Defina limites percentuais em qualquer objetivo ou dívida. O Meridian envia uma notificação push no momento em que cruza 50% ou atinge 100% — ativada automaticamente à medida que chegam novas transações.",
+    "card7_body": "Define limites percentuais em qualquer objetivo ou dívida. O Meridian envia uma notificação push no momento em que cruzas 50% ou atinges 100% — ativada automaticamente à medida que chegam novas transações.",
     "card7_tier": "Full",
     "card8_title": "Calendários de amortização",
     "card8_body": "Amortização francesa para hipotecas e empréstimos: calendário de pagamentos completo com divisão capital/juros, registo de pagamentos extra e uma palavra-chave que deteta pagamentos automaticamente na importação.",
@@ -117,10 +117,10 @@
     "card1_body": "A tua vista diária: hábitos para marcar, tarefas a vencer hoje, estado do orçamento e o registo de saúde de hoje — tudo num único ecrã. Os itens em atraso ficam destacados até serem resolvidos.",
     "card1_tier": "Todos os planos",
     "card2_title": "Métricas de saúde personalizadas",
-    "card2_body": "Registe peso, sono, humor, água — ou defina as tuas próprias métricas com nomes, unidades e cores personalizados. Define uma meta por métrica e vê o teu registo diário de relance. Gráficos de tendência ao longo de 30 ou 90 dias.",
+    "card2_body": "Regista peso, sono, humor, água — ou define as tuas próprias métricas com nomes, unidades e cores personalizados. Define uma meta por métrica e vê o teu registo diário de relance. Gráficos de tendência ao longo de 30 ou 90 dias.",
     "card2_tier": "Base e Full",
     "card3_title": "Hábitos com sequências",
-    "card3_body": "Registo diário de hábitos ao lado do teu registo de saúde. Cada hábito mostra a sequência atual, uma grelha semanal de 7 dias e uma taxa de conclusão de 30 dias. Marque no ecrã inicial ou no separador Saúde.",
+    "card3_body": "Registo diário de hábitos ao lado do teu registo de saúde. Cada hábito mostra a sequência atual, uma grelha semanal de 7 dias e uma taxa de conclusão de 30 dias. Marca no ecrã inicial ou no separador Saúde.",
     "card3_tier": "Todos os planos",
     "card4_title": "Acesso pelo telemóvel",
     "card4_body": "Instala como PWA no teu telemóvel e acede ao Meridian a partir de qualquer dispositivo na tua rede local — ou via Tailscale de qualquer lugar. Sem reencaminhamento de portas, sem relay cloud, sem exposição.",
@@ -131,41 +131,42 @@
     "title": "As partes repetitivas, tratadas",
     "sub": "Cada automação corre localmente, na tua máquina, sem chamadas a APIs externas. Potente sem o custo de privacidade.",
     "card1_title": "Categorização automática de transações",
-    "card1_body": "Defina regras por palavra-chave uma vez. Cada importação é classificada automaticamente — mercearias, serviços, subscrições — sem tocar numa única transação manualmente. As regras podem ser aplicadas retroativamente ao histórico existente.",
+    "card1_body": "Define regras por palavra-chave uma vez. Cada importação é classificada automaticamente — mercearias, serviços, subscrições — sem tocar numa única transação manualmente. As regras podem ser aplicadas retroativamente ao histórico existente.",
     "card1_tier": "Base e Full",
     "card2_title": "Deteção de pagamentos de dívidas",
-    "card2_body": "Atribua uma palavra-chave a cada dívida. Quando uma transação correspondente é importada, o Meridian regista o pagamento e reduz o saldo em dívida — sem atualização manual.",
+    "card2_body": "Atribui uma palavra-chave a cada dívida. Quando uma transação correspondente é importada, o Meridian regista o pagamento e reduz o saldo em dívida — sem atualização manual.",
     "card2_tier": "Base e Full",
     "card3_title": "Notificações push",
-    "card3_body": "Recebe notificações quando um orçamento é excedido após uma importação, quando é hora de registar as tuas métricas de saúde ou quando uma tarefa está a chegar ao limite — entregues via o sistema de notificações do teu dispositivo, sem serviço de terceiros.",
+    "card3_body": "Recebe notificações quando um orçamento é excedido após uma importação, quando é hora de registar as tuas métricas de saúde ou quando uma tarefa está prestes a vencer — entregues via o sistema de notificações do teu dispositivo, sem serviço de terceiros.",
     "card3_tier": "Base e Full",
     "card4_title": "Alertas de marcos de objetivos e dívidas",
-    "card4_body": "Defina até dois limites percentuais por objetivo ou dívida — por exemplo, 50% e 100%. O Meridian envia uma notificação no momento em que um limiar é cruzado, ativada automaticamente à medida que chegam transações.",
+    "card4_body": "Define até dois limites percentuais por objetivo ou dívida — por exemplo, 50% e 100%. O Meridian envia uma notificação no momento em que um limiar é cruzado, ativada automaticamente à medida que chegam transações.",
     "card4_tier": "Full"
   },
   "full_tier": {
     "label": "Plano Full",
-    "title": "Mantenha-se atualizado, sem esforço",
+    "title": "Mantém-te atualizado, sem esforço",
     "sub": "O Full adiciona as funcionalidades que fazem a análise por si — e mantém a app atualizada à medida que o Meridian cresce.",
     "item1_title": "Projeção de património líquido + taxa de poupança",
-    "item1_body": "Os teus ativos, dívidas e taxa de poupança móvel de 6 meses — calculados automaticamente a partir do histórico de importações. Veja onde está e para onde vai sem levantar um dedo.",
+    "item1_body": "Os teus ativos, dívidas e taxa de poupança móvel de 6 meses — calculados automaticamente a partir do histórico de importações. Vê onde estás e para onde vais sem levantar um dedo.",
     "item2_title": "Alertas de marcos em objetivos e dívidas",
-    "item2_body": "Defina limites percentuais uma vez. O Meridian notifica-o automaticamente quando os cruza — assim que chega uma nova importação, não dias depois quando se lembra de verificar.",
+    "item2_body": "Define limites percentuais uma vez. O Meridian notifica-te automaticamente quando os cruzas — assim que chega uma nova importação, não dias depois quando te lembras de verificar.",
     "item3_title": "Servidor MCP local",
-    "item3_body": "Consulte os teus dados financeiros e de saúde a partir do Claude, Cursor ou qualquer assistente de IA compatível com MCP. Somente leitura, autenticado por token, totalmente local — os teus dados são o contexto, nada é enviado a terceiros.",
+    "item3_body": "Consulta os teus dados financeiros e de saúde a partir do Claude, Cursor ou qualquer assistente de IA compatível com MCP. Apenas leitura, autenticado por token, totalmente local — os teus dados são o contexto, nada é enviado a terceiros.",
     "item4_title": "Atualizações de software incluídas",
-    "item4_body": "Cada novo lançamento do Meridian é entregue automaticamente enquanto a tua subscrição está ativa. A app melhora sem fazer nada.",
+    "item4_body": "Cada novo lançamento do Meridian é entregue automaticamente enquanto a tua subscrição está ativa. A app melhora sem fazeres nada.",
     "coming_label": "No roadmap",
     "coming1_title": "Sincronização bancária automática",
     "coming1_body": "Integração EnableBanking (PSD2) para bancos europeus suportados — as transações chegam automaticamente em vez de um export manual mensal. O upload XLS fica como alternativa.",
     "coming2_title": "Chat com IA local",
-    "coming2_body": "Faça perguntas em linguagem natural respondidas pelos teus próprios dados via Ollama — \"quanto gastei em comida no último trimestre?\" — totalmente offline, usando as ferramentas MCP já no Full."
+    "coming2_body": "Faz perguntas em linguagem natural respondidas pelos teus próprios dados via Ollama — \"quanto gastei em comida no último trimestre?\" — totalmente offline, usando as ferramentas MCP já no Full."
   },
   "pricing": {
     "label": "Preços",
     "title": "Dois caminhos. Ambos privados.",
-    "sub": "O Base dá-lhe tudo o que precisa, uma vez, para sempre — ideal se já sabe o que quer acompanhar. O Full adiciona insights mais profundos e atualizações contínuas para utilizadores que querem manter-se atualizados sem esforço.",
+    "sub": "O Base dá-te tudo o que precisas, uma vez, para sempre — ideal se já sabes o que queres acompanhar. O Full adiciona insights mais profundos e atualizações contínuas para utilizadores que querem manter-se atualizados sem esforço.",
     "trial_badge": "Teste Gratuito",
+    "trial_price": "Grátis",
     "trial_price_note": "31 dias · sem cartão de crédito",
     "trial_features_yes": [
       "Transações, categorias, orçamentos",
@@ -173,8 +174,7 @@
       "Projeção mensal de rendimentos/despesas",
       "Registo de saúde e hábitos (5 de cada)",
       "Gestão de tarefas e tarefas recorrentes",
-      "Export JSON",
-      "Apenas para computador"
+      "Export JSON"
     ],
     "trial_features_no": [
       "Regras de categorização automática",
@@ -192,13 +192,14 @@
       "Deteção automática e calendários de pagamento de dívidas",
       "Acesso pelo telemóvel (LAN / Tailscale)",
       "Notificações push (tarefas, orçamentos, saúde)",
-      "Export + import de JSON e backup encriptado",
+      "Export + import de JSON",
       "Gráficos de tendências de saúde",
       "Lembretes de tarefas e hábitos"
     ],
     "base_features_no": [
       "Taxa de poupança e projeção de património líquido",
       "Alertas de marcos",
+      "Backup encriptado",
       "Integração MCP / IA"
     ],
     "base_cta": "Comprar agora",
@@ -215,18 +216,20 @@
       "Atualizações de software incluídas"
     ],
     "full_cta": "Comprar agora",
-    "footnote": "O Teste e o Base são bloqueados à versão — a licença que comprar mantém-se válida para a versão instalada; não são fornecidas atualizações futuras.\nOs subscritores Full recebem todas as atualizações de software enquanto a tua subscrição anual está ativa."
+    "footnote": "O Teste e o Base são bloqueados à versão — a licença que compras mantém-se válida para a versão instalada; não são fornecidas atualizações futuras.\nOs subscritores Full recebem todas as atualizações de software enquanto a sua subscrição anual estiver ativa."
   },
   "download": {
     "label": "Transferência",
-    "title": "Transfira e comece em minutos",
-    "sub": "Instale a app Electron no Windows. O teu teste de 31 dias começa no primeiro arranque — sem cartão de crédito, sem conta.",
+    "title": "Transfere e começa em minutos",
+    "sub": "Instala a app Electron no Windows. O teu teste de 31 dias começa no primeiro arranque — sem cartão de crédito, sem conta.",
     "windows_label": "Windows · Instalador Electron",
     "windows_name": "Transferir para Windows"
   },
   "footer_text": {
     "copyright": "© 2026 Meridian. Todos os direitos reservados.",
     "privacy_link": "Política de Privacidade",
+    "terms_link": "Termos e Condições",
+    "refunds_link": "Política de Reembolsos",
     "support_link": "Suporte"
   },
   "privacy_page": {
@@ -236,29 +239,63 @@
     "effective_date": "2026-06-05",
     "last_updated": "2026-06-05",
     "s1_title": "Resumo",
-    "s1_body": "O Meridian é um organizador pessoal local para finanças, saúde, tarefas e hábitos. Todos os dados que introduz são armazenados exclusivamente no teu próprio dispositivo. O Meridian não opera servidores que recebam, armazenem ou processem as tuas informações pessoais.",
+    "s1_body": "O Meridian é um organizador pessoal local para finanças, saúde, tarefas e hábitos. Todos os dados que introduzes são armazenados exclusivamente no teu próprio dispositivo. O Meridian não opera servidores que recebam, armazenem ou processem as tuas informações pessoais.",
     "s2_title": "Dados que não recolhemos",
     "s2_items": [
       "Sem registo de conta — não existe conta Meridian na cloud.",
-      "Sem análises nem telemetria de utilização.",
+      "Sem análises de utilização nem telemetria comportamental.",
       "Sem identificadores de publicidade ou rastreamento de terceiros.",
       "Sem relatórios de erros enviados para servidores Meridian."
     ],
+    "s2b_title": "Ping de instalação anónimo (opt-in)",
+    "s2b_body": "Durante a instalação podes optar por enviar um único ping de instalação anónimo. Se aceitares, a app envia um pedido contendo apenas a versão da app e o sistema operativo — sem dados pessoais, sem identificadores e sem informação de utilização. Isto ajuda-nos a contar instalações. Está desativado por omissão e recusá-lo não tem qualquer efeito na app.",
     "s3_title": "Dados armazenados localmente no teu dispositivo",
-    "s3_body": "Tudo o que introduzes no Meridian — transações, orçamentos, métricas de saúde, tarefas, hábitos e quaisquer extratos bancários importados — é armazenado numa base de dados SQLite na tua própria máquina (%APPDATA%\\Meridian\\ no Windows, ou num volume Docker que controla). Estes dados nunca saem do teu dispositivo a menos que exporta explicitamente um ficheiro de backup.",
+    "s3_body": "Tudo o que introduzes no Meridian — transações, orçamentos, métricas de saúde, tarefas, hábitos e quaisquer extratos bancários importados — é armazenado numa base de dados SQLite na tua própria máquina (%APPDATA%\\Meridian\\ no Windows, ou num volume Docker que controlas). Estes dados nunca saem do teu dispositivo a menos que exportes explicitamente um ficheiro de backup.",
     "s4_title": "Cookie de sessão",
-    "s4_body": "O Meridian define um único cookie de sessão para o manter autenticado. Este cookie é armazenado apenas no teu browser local e nunca é transmitido para nenhum servidor Meridian.",
+    "s4_body": "O Meridian define um único cookie de sessão para te manter autenticado. Este cookie é armazenado apenas no teu browser local e nunca é transmitido para nenhum servidor Meridian.",
     "s5_title": "Integração Google Fit (opcional)",
-    "s5_body": "Se ligar o Google Fit, o Meridian usa o fluxo OAuth 2.0 da Google para solicitar acesso só de leitura aos teus dados de fitness. O token OAuth é armazenado localmente no teu dispositivo. Os dados de saúde obtidos do Google Fit são escritos na tua base de dados local e não são transmitidos para mais lado nenhum. Pode desligar o Google Fit a qualquer momento em Definições → Saúde.",
+    "s5_body": "Se ligares o Google Fit, o Meridian usa o fluxo OAuth 2.0 da Google para solicitar acesso só de leitura aos teus dados de fitness. O token OAuth é armazenado localmente no teu dispositivo. Os dados de saúde obtidos do Google Fit são escritos na tua base de dados local e não são transmitidos para mais lado nenhum. Podes desligar o Google Fit a qualquer momento em Definições → Saúde.",
     "s6_title": "Notificações push (opcional)",
     "s6_body": "Se ativares as notificações push, o teu browser gera um endpoint de subscrição push (fornecido pelo serviço push do teu browser — ex. Google FCM para Chrome). Este endpoint é armazenado localmente e usado apenas para entregar notificações da tua instância Meridian para o teu próprio dispositivo. O Meridian não o usa para nenhum outro fim.",
     "s7_title": "Atualizações de software",
     "s7_body": "A app Electron verifica atualizações via GitHub Releases (github.com/LfmaSL/Meridian/releases). Esta verificação envia um pedido HTTPS padrão para os servidores da GitHub. Nenhum dado pessoal da app é incluído neste pedido.",
     "s8_title": "Processamento de pagamentos",
-    "s8_body": "As compras de licenças são processadas pela Paddle.com Market Limited, atuando como Merchant of Record. Quando compra uma licença, interage diretamente com o checkout da Paddle — o Meridian não recebe nem armazena os teus dados de pagamento. O tratamento dos teus dados de pagamento pela Paddle é regido pela Política de Privacidade da Paddle.",
+    "s8_body": "As compras de licenças são processadas pela Paddle.com Market Limited, atuando como Merchant of Record. Quando compras uma licença, interages diretamente com o checkout da Paddle — o Meridian não recebe nem armazena os teus dados de pagamento. O tratamento dos teus dados de pagamento pela Paddle é regido pela Política de Privacidade da Paddle.",
     "s9_title": "Os teus direitos",
-    "s9_body": "Como o Meridian armazena dados apenas no teu dispositivo, tem controlo total em todos os momentos. Pode exportar, apagar ou repor todos os dados em Definições → Dados. Não existe conta na cloud para encerrar.",
+    "s9_body": "Como o Meridian armazena dados apenas no teu dispositivo, tens controlo total em todos os momentos. Podes exportar, apagar ou repor todos os dados em Definições → Dados. Não existe conta na cloud para encerrar.",
     "s10_title": "Contacto",
     "s10_body": "Questões sobre esta política:"
+  },
+  "terms_page": {
+    "title": "Termos e Condições — Meridian",
+    "back_link": "← Meridian",
+    "h1": "Termos e Condições",
+    "effective_date": "2026-06-12",
+    "contact_lead": "Questões sobre estes termos:",
+    "sections": [
+      { "title": "Resumo", "body": "Estes termos regem a compra e utilização do Meridian, uma aplicação de computador para finanças pessoais, saúde, tarefas e hábitos. Ao instalares a app ou comprares uma licença, aceitas estes termos." },
+      { "title": "Licenças e planos", "body": "O Meridian oferece um teste gratuito de 31 dias, uma licença Base e uma subscrição Full. O teste e a licença Base são bloqueados à versão: mantêm-se válidos indefinidamente para a versão instalada no momento da compra, sem direito a atualizações futuras. A subscrição Full é faturada anualmente e inclui todas as atualizações de software enquanto estiver ativa. As licenças destinam-se a uso pessoal em dispositivos que possuis ou controlas e não podem ser revendidas nem redistribuídas." },
+      { "title": "Pagamentos", "body": "As compras são processadas pela Paddle.com Market Limited, na qualidade de Merchant of Record. A Paddle trata do checkout, da faturação, dos impostos aplicáveis e dos dados de pagamento, regidos pelos termos e pela política de privacidade da própria Paddle. O Meridian nunca recebe os teus dados de pagamento." },
+      { "title": "Subscrições e cancelamento", "body": "As subscrições Full renovam-se anualmente até serem canceladas. Podes cancelar a qualquer momento através do link no recibo da Paddle ou contactando o suporte. O cancelamento trava renovações futuras; a app continua a funcionar na última versão que recebeste." },
+      { "title": "Reembolsos", "body": "Os reembolsos são tratados de acordo com a nossa Política de Reembolsos, disponível neste site." },
+      { "title": "Utilização aceitável", "body": "Não podes partilhar, revender ou redistribuir chaves de licença, nem tentar contornar a validação de licenças. A engenharia reversa não é permitida, exceto na medida autorizada pela lei aplicável." },
+      { "title": "Sem aconselhamento financeiro", "body": "O Meridian é uma ferramenta de registo e visualização. Nada na app constitui aconselhamento financeiro, de investimento, fiscal ou de saúde." },
+      { "title": "Garantia e responsabilidade", "body": "A app é fornecida \"tal como está\", sem garantias de qualquer tipo, na máxima medida permitida por lei. A nossa responsabilidade total decorrente da app está limitada ao valor que pagaste por ela nos doze meses anteriores à reclamação. Nada nestes termos limita responsabilidades que não possam ser limitadas pela lei aplicável, nem afeta os teus direitos legais enquanto consumidor." },
+      { "title": "Alterações a estes termos", "body": "Podemos atualizar estes termos ocasionalmente. Alterações relevantes serão refletidas nesta página com uma nova data de entrada em vigor. A utilização continuada da app após uma alteração constitui aceitação dos termos revistos." },
+      { "title": "Lei aplicável", "body": "Estes termos são regidos pela lei portuguesa. Se fores consumidor, beneficias igualmente de quaisquer proteções obrigatórias da lei do teu país de residência." }
+    ]
+  },
+  "refunds_page": {
+    "title": "Política de Reembolsos — Meridian",
+    "back_link": "← Meridian",
+    "h1": "Política de Reembolsos",
+    "effective_date": "2026-06-12",
+    "contact_lead": "Questões sobre reembolsos:",
+    "sections": [
+      { "title": "Experimenta antes de comprar", "body": "O Meridian oferece um teste gratuito completo de 31 dias, sem cartão de crédito. Recomendamos que uses o teste para confirmar que a app se adequa às tuas necessidades antes de comprar." },
+      { "title": "Direito de livre resolução de 14 dias", "body": "Se fores consumidor na UE, no EEE ou no Reino Unido, podes resolver a compra no prazo de 14 dias após a transação, sem indicar qualquer motivo, nos termos da legislação de consumo aplicável. Consumidores de outros países também podem pedir reembolso no prazo de 14 dias após a compra." },
+      { "title": "Como pedir um reembolso", "body": "As compras são processadas pela Paddle como Merchant of Record, pelo que os reembolsos são emitidos pela Paddle. Responde ao email do recibo da Paddle, ou contacta o nosso email de suporte com o número da encomenda, e trataremos do pedido. Os reembolsos são devolvidos ao método de pagamento original, normalmente em 5 a 10 dias úteis." },
+      { "title": "Renovações de subscrição", "body": "Cancelar uma subscrição Full trava renovações futuras a qualquer momento. Se uma renovação tiver sido cobrada nos últimos 14 dias, podes pedir o reembolso dessa cobrança." }
+    ]
   }
 }

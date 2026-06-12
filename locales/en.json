@@ -154,14 +154,15 @@
     "title": "Two paths. Both private.",
     "sub": "Base gives you everything you need, once, forever — ideal if you already know what you want to track. Full adds deeper insights and continuous updates for users who want to stay current without effort.",
     "trial_badge": "Free Trial",
+    "trial_price": "Free",
     "trial_price_note": "31 days · no credit card required",
-    "trial_features_yes": ["Transactions, categories, budgets", "Goals & debt tracking", "Monthly income/expense projection", "Health log & habits (5 of each)", "Task management & recurring tasks", "JSON export", "Desktop only"],
+    "trial_features_yes": ["Transactions, categories, budgets", "Goals & debt tracking", "Monthly income/expense projection", "Health log & habits (5 of each)", "Task management & recurring tasks", "JSON export"],
     "trial_features_no": ["Auto-categorisation rules", "Phone access", "Push notifications", "Encrypted backup"],
     "trial_cta": "Download",
     "base_badge": "Base",
     "base_price_note": "One-time · yours forever",
-    "base_features_yes": ["Everything in Trial, no limits", "All import formats (XLS, PDF, TXT)", "Auto-categorisation rules & import history", "Debt payment keyword auto-log & schedules", "Phone access (LAN / Tailscale)", "Push notifications (tasks, budgets, health)", "JSON & encrypted backup export + import", "Health trend charts", "Task & habit reminders"],
-    "base_features_no": ["Savings rate & net worth projection", "Milestone alerts", "MCP / AI integration"],
+    "base_features_yes": ["Everything in Trial, no limits", "All import formats (XLS, PDF, TXT)", "Auto-categorisation rules & import history", "Debt payment keyword auto-log & schedules", "Phone access (LAN / Tailscale)", "Push notifications (tasks, budgets, health)", "JSON export + import", "Health trend charts", "Task & habit reminders"],
+    "base_features_no": ["Savings rate & net worth projection", "Milestone alerts", "Encrypted backup", "MCP / AI integration"],
     "base_cta": "Buy now",
     "full_badge": "Full",
     "full_featured_label": "Most complete",
@@ -180,6 +181,8 @@
   "footer_text": {
     "copyright": "© 2026 Meridian. All rights reserved.",
     "privacy_link": "Privacy Policy",
+    "terms_link": "Terms & Conditions",
+    "refunds_link": "Refund Policy",
     "support_link": "Support"
   },
   "privacy_page": {
@@ -191,7 +194,9 @@
     "s1_title": "Overview",
     "s1_body": "Meridian is a local-only personal organiser for finance, health, tasks, and habits. All data you enter is stored exclusively on your own device. Meridian does not operate servers that receive, store, or process your personal information.",
     "s2_title": "Data we do not collect",
-    "s2_items": ["No account registration — there is no Meridian cloud account.", "No analytics or usage telemetry.", "No advertising identifiers or third-party tracking.", "No crash reports sent to Meridian servers."],
+    "s2_items": ["No account registration — there is no Meridian cloud account.", "No usage analytics or behavioural telemetry.", "No advertising identifiers or third-party tracking.", "No crash reports sent to Meridian servers."],
+    "s2b_title": "Anonymous install ping (opt-in)",
+    "s2b_body": "During installation you may opt in to a single anonymous install ping. If you opt in, the app sends one request containing only the app version and operating system — no personal data, no identifiers, and no usage information. This helps us count installs. It is off by default, and declining it has no effect on the app.",
     "s3_title": "Data stored locally on your device",
     "s3_body": "Everything you enter into Meridian — transactions, budgets, health metrics, tasks, habits, and any imported bank statements — is stored in a SQLite database on your own machine (%APPDATA%\\Meridian\\ on Windows, or a Docker volume you control). This data never leaves your device unless you explicitly export a backup file.",
     "s4_title": "Session cookie",
@@ -208,5 +213,37 @@
     "s9_body": "Because Meridian stores data only on your device, you have full control at all times. You can export, delete, or reset all data from Settings → Data. There is no cloud account to close.",
     "s10_title": "Contact",
     "s10_body": "Questions about this policy:"
+  },
+  "terms_page": {
+    "title": "Terms & Conditions — Meridian",
+    "back_link": "← Meridian",
+    "h1": "Terms & Conditions",
+    "effective_date": "2026-06-12",
+    "contact_lead": "Questions about these terms:",
+    "sections": [
+      { "title": "Overview", "body": "These terms govern your purchase and use of Meridian, a desktop application for personal finance, health, task, and habit tracking. By installing the app or purchasing a license you agree to these terms." },
+      { "title": "Licenses and tiers", "body": "Meridian offers a free 31-day trial, a Base license, and a Full subscription. The trial and Base licenses are version-locked: they remain valid indefinitely for the version installed at the time of purchase, and no future updates are included. The Full subscription is billed annually and includes all software updates while it is active. Licenses are for personal use on devices you own or control, and may not be resold or redistributed." },
+      { "title": "Payments", "body": "Purchases are processed by Paddle.com Market Limited, acting as Merchant of Record. Paddle handles checkout, invoicing, applicable taxes, and payment data, governed by Paddle's own terms and privacy policy. Meridian never receives your payment details." },
+      { "title": "Subscriptions and cancellation", "body": "Full subscriptions renew annually until cancelled. You can cancel at any time via the link in your Paddle receipt or by contacting support. Cancellation stops future renewals; the app continues to work at the last version delivered to you." },
+      { "title": "Refunds", "body": "Refunds are handled according to our Refund Policy, available on this site." },
+      { "title": "Acceptable use", "body": "You may not share, resell, or redistribute license keys, or attempt to circumvent license validation. Reverse engineering is not permitted except to the extent allowed by applicable law." },
+      { "title": "No financial advice", "body": "Meridian is a record-keeping and visualisation tool. Nothing in the app constitutes financial, investment, tax, or health advice." },
+      { "title": "Warranty and liability", "body": "The app is provided \"as is\", without warranty of any kind to the maximum extent permitted by law. Our total liability arising from or related to the app is limited to the amount you paid for it in the twelve months preceding the claim. Nothing in these terms limits liability that cannot be limited under applicable law, or affects your statutory rights as a consumer." },
+      { "title": "Changes to these terms", "body": "We may update these terms from time to time. Material changes will be reflected on this page with an updated effective date. Continued use of the app after a change constitutes acceptance of the revised terms." },
+      { "title": "Governing law", "body": "These terms are governed by the laws of Portugal. If you are a consumer, you also benefit from any mandatory protections of the law of your country of residence." }
+    ]
+  },
+  "refunds_page": {
+    "title": "Refund Policy — Meridian",
+    "back_link": "← Meridian",
+    "h1": "Refund Policy",
+    "effective_date": "2026-06-12",
+    "contact_lead": "Questions about refunds:",
+    "sections": [
+      { "title": "Try before you buy", "body": "Meridian offers a full 31-day free trial with no credit card required. We encourage you to use the trial to make sure the app fits your needs before purchasing." },
+      { "title": "14-day right of withdrawal", "body": "If you are a consumer in the EU, EEA, or UK, you may withdraw from your purchase within 14 days of the transaction without giving a reason, in line with applicable consumer law. Consumers elsewhere may also request a refund within 14 days of purchase." },
+      { "title": "How to request a refund", "body": "Purchases are processed by Paddle as Merchant of Record, so refunds are issued by Paddle. Reply to your Paddle receipt email, or contact our support email with your order number, and we will process the request. Refunds are returned to the original payment method, typically within 5–10 business days." },
+      { "title": "Subscription renewals", "body": "Cancelling a Full subscription stops future renewals at any time. If a renewal charge was made within the last 14 days, you may request a refund of that charge." }
+    ]
   }
 }

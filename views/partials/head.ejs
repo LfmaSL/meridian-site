@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= c.meta ? c.meta.title : title %></title>
   <% if (c.meta) { %><meta name="description" content="<%= c.meta.description %>" /><% } %>
+
+  <% const pagePath = page ? page : ''; %>
+  <link rel="canonical" href="<%= baseUrl %>/<%= locale %>/<%= pagePath %>" />
+  <% supported.forEach(function(lang) { %>
+  <link rel="alternate" hreflang="<%= lang %>" href="<%= baseUrl %>/<%= lang %>/<%= pagePath %>" />
+  <% }); %>
+  <link rel="alternate" hreflang="x-default" href="<%= baseUrl %>/en/<%= pagePath %>" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Meridian" />
+  <meta property="og:title" content="<%= c.meta ? c.meta.title : title %>" />
+  <% if (c.meta) { %><meta property="og:description" content="<%= c.meta.description %>" /><% } %>
+  <meta property="og:url" content="<%= baseUrl %>/<%= locale %>/<%= pagePath %>" />
+  <meta property="og:locale" content="<%= locale === 'pt' ? 'pt_PT' : 'en_US' %>" />
+  <meta name="twitter:card" content="summary" />
+
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/css/style.css" />
   <!-- No-flash theme init -->
   <script>(function(){var s=localStorage.getItem('meridian-theme'),p=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
