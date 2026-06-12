@@ -14,7 +14,7 @@
     "eyebrow": "Local-first · No accounts · No cloud",
     "h1_line1": "Finance, health and habits.",
     "h1_line2": "Private, automated, yours.",
-    "subhead": "Import your bank statements, let Meridian categorise and track everything, and keep your entire financial picture on your own machine — no accounts, no cloud, no data handed to anyone.",
+    "subhead": "Import your bank statement, Meridian handles the rest — categories, budgets, goals, health, habits. Everything on your machine. No accounts, no cloud, no data handed to anyone.",
     "cta_primary": "Start free trial",
     "cta_secondary": "See pricing"
   },
@@ -28,10 +28,10 @@
   },
   "story": {
     "label": "Why Meridian exists",
-    "title": "Built because the alternatives didn't work",
-    "p1": "Meridian started as a personal tool — one developer's answer to a frustration that kept coming back. Every finance app either stores your transaction data on their server, or charges a recurring fee just to keep working. Spreadsheets are powerful, but a broken formula or a messy paste column can quietly corrupt a year of tracking without any warning.",
-    "p2": "What started as a weekend import script grew into a full organiser: budget tracking, debt payment schedules, goal progress, daily health metrics, habits, and tasks — unified in one local app, with automations that handle the repetitive parts on every import.",
-    "p3": "Today Meridian is used by people who've outgrown spreadsheets but won't hand their financial history to a third-party cloud, and by people who want their finance, health, and habits in one place — without giving that data to anyone.",
+    "title": "Started on a weekend. Still here.",
+    "p1": "Too many spreadsheets. One for the budget, one for the debts, one for everything else. Every month: export the bank statement, paste the columns, hope nothing had broken. One weekend I wrote a script to do the import for me.",
+    "p2": "Then I wanted to see the spending as a chart. Then auto-categories. Then net worth and projections. Then debt schedules, tasks, reminders. Then health metrics and habits — it was all there already, and it made sense to have the full picture in one place.",
+    "p3": "I never planned to build an app. It grew on weekends, one iteration at a time. The data is still on my machine, the monthly import is still one click, and there are no spreadsheets left.",
     "card1_title": "Your transactions, your server",
     "card1_body": "Most finance apps read and process your data in the cloud. Meridian imports your bank files directly — nothing is transmitted, nothing is analysed remotely. Your data never leaves your machine.",
     "card2_title": "Automation without maintenance",
@@ -117,7 +117,7 @@
   "automations": {
     "label": "Automations",
     "title": "The repetitive parts, handled",
-    "sub": "Every automation runs locally, on your machine, with no external API calls. Powerful without the privacy trade-off.",
+    "sub": "Every automation runs locally, on your machine, with no external API calls.",
     "card1_title": "Auto-categorise transactions",
     "card1_body": "Define keyword rules once. Every import is classified automatically — groceries, utilities, subscriptions — without touching a single transaction by hand. Rules can be applied retroactively to existing history.",
     "card1_tier": "Base & Full",
@@ -152,7 +152,7 @@
   "pricing": {
     "label": "Pricing",
     "title": "Two paths. Both private.",
-    "sub": "Base gives you everything you need, once, forever — ideal if you already know what you want to track. Full adds deeper insights and continuous updates for users who want to stay current without effort.",
+    "sub": "Base has everything you need, once, forever. Full adds deeper analysis and continuous updates — for when you don't want to think about it.",
     "trial_badge": "Free Trial",
     "trial_price": "Free",
     "trial_price_note": "31 days · no credit card required",
