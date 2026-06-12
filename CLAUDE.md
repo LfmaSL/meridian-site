@@ -3,7 +3,7 @@ purpose: Public marketing/landing site for Meridian app
 domain: meridian.pt
 hosting: Railway (Node.js server)
 registrar: PTisp
-stack: Express + EJS + node:sqlite (built-in) · no build step · no native deps
+stack: Express + EJS · static content from JSON files · no DB · no build step · no native deps
 
 entry: server.js
 start: node server.js
@@ -13,69 +13,41 @@ dev:   node --watch server.js
 
 # Architecture
 
-  db/setup.js        — node:sqlite schema (admins, content_config, content_text)
-  db/seed.js         — initial EN + PT content seed (runs once on first boot)
+  config.js          — prices, buy/download URLs, support email (edit + commit)
+  locales/en.json    — all EN page text, keyed by section
+  locales/pt.json    — all PT page text (informal "tu" register, PT-PT)
   middleware/
     locale.js        — extracts locale from URL prefix (/pt/, /en/)
-    auth.js          — requireAdmin guard
   routes/
-    auth.js          — /auth/google + callback + logout
-    site.js          — /:locale/ and /:locale/privacy public pages
-    admin.js         — /admin/* content editor + user management
+    site.js          — all public pages + /sitemap.xml
   views/
-    partials/        — head.ejs, nav.ejs, footer.ejs
-    pages/           — index.ejs, privacy.ejs
-    admin/           — dashboard.ejs, users.ejs
-    auth/            — denied.ejs
+    partials/        — head.ejs (SEO meta), nav.ejs, footer.ejs
+    pages/           — index.ejs, privacy.ejs, terms.ejs, refunds.ejs, 404.ejs
   public/
     css/style.css    — centralized, dark/light themes via CSS custom properties
-    js/theme.js      — theme toggle (localStorage, no-flash)
+    js/theme.js      — theme toggle + mobile nav toggle
+    favicon.svg · robots.txt
+
+  content-editing: edit locales/*.json or config.js, commit, redeploy
+  no admin panel, no auth, no database (removed 2026-06-12)
 
 ---
 
 # URL structure
 
   /              → 301 to /pt/ or /en/ (Accept-Language)
-  /pt/           → Portuguese marketing page
-  /en/           → English marketing page
-  /pt/privacy    → Portuguese privacy policy
-  /en/privacy    → English privacy policy
-  /admin         → content editor (Google OAuth protected)
-  /admin/users   → admin user management
-  /auth/google   → OAuth start
-  /auth/logout   → POST to sign out
-
----
-
-# Content model (SQLite)
-
-  content_config (key, value)             — prices, URLs, email (not locale-specific)
-  content_text   (key, locale, value)     — all page text as JSON per section per locale
-  admins         (id, google_id, email, name, added_by, added_at)
-  sessions stored in ./data/sessions/ (session-file-store)
-
-  content_config keys:
-    base_price · full_price · base_price_note · full_price_note
-    download_url · base_buy_url · full_buy_url · support_email
-
-  content_text section keys (each locale 'en' / 'pt'):
-    meta · nav · hero · trust · story · import_sec · privacy_sec
-    finance · health · automations · full_tier · pricing · download
-    footer_text · privacy_page
+  /:locale/      → marketing page (pt | en)
+  /:locale/privacy · /:locale/terms · /:locale/refunds
+  /privacy /terms /refunds → 301 to detected locale
+  /sitemap.xml   → generated from BASE_URL
+  anything else  → branded 404
 
 ---
 
 # Env vars
 
-  GOOGLE_CLIENT_ID       — from Google Cloud Console
-  GOOGLE_CLIENT_SECRET   — from Google Cloud Console
-  SESSION_SECRET         — random string (openssl rand -hex 32)
-  ADMIN_SEED_EMAIL       — first admin email (bootstrapped on first run)
-  BASE_URL               — https://meridian.pt (no trailing slash)
-  PORT                   — 3000
-  DB_PATH                — optional, default ./data/meridian.db
-
-  OAuth callback to register: ${BASE_URL}/auth/google/callback
+  BASE_URL — https://meridian.pt (no trailing slash; used for canonical/hreflang/sitemap)
+  PORT     — 3000
 
 ---
 
@@ -95,31 +67,31 @@ dev:   node --watch server.js
   URL-based: /pt/* and /en/*
   Default: /pt/ (auto-detect from Accept-Language header on /)
   Supported: ['en', 'pt']
-  Content stored in DB (content_text), NOT in files
-  Admin edits per locale via dashboard tabs
+  Content in locales/*.json (NOT in DB)
+  PT register: informal "tu" — keep consistent in all new copy
 
 ---
 
 # Pending before launch
 
-  placeholder-hrefs:
+  placeholder-hrefs (config.js):
     download_url  → telemetry CF Worker URL (pending deployment)
     base_buy_url  → Paddle checkout URL (pending product creation)
     full_buy_url  → Paddle checkout URL (pending product creation)
 
-  google-oauth:
-    GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET → pending Console project setup
-    Authorized redirect URI: https://meridian.pt/auth/google/callback
-    Also add: http://localhost:3000/auth/google/callback (for dev)
+  legal-review:
+    terms_page + refunds_page content in locales/*.json is stub wording — owner review before launch
+    privacy_page s2b (install ping) — verify wording matches actual telemetry behavior
 
   railway:
+    Set BASE_URL=https://meridian.pt env var
     Custom domain meridian.pt → Railway project → Networking → Custom domain
     DNS: @ and www → Railway IP/CNAME (PTisp panel)
     TLS: auto via Let's Encrypt once DNS propagates
 
-  cname:
-    current: yourdomain.com
-    required: meridian.pt
+  marketing (needs assets):
+    product screenshots — none on page, biggest conversion gap
+    social proof — story section claims users with no evidence
 
 ---
 
@@ -133,6 +105,7 @@ dev:   node --watch server.js
             5 habits, 5 metrics; no auto-categorisation, no phone access, no push, no encrypted backup
     Base:   €39 one-time, version-locked; everything unlimited + phone access (LAN/Tailscale),
             push notifications, health trends, backup import, debt schedules, task reminders
+            NO encrypted backup (Full-only)
     Full:   €59/year, updates while active; Base + savings rate, net worth projection,
             milestone alerts, encrypted backup, admin panel, MCP server, bank sync (Edenred),
             EnableBanking (coming soon)
