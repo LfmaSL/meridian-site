@@ -12,7 +12,7 @@
   <h1><%= c.hero.h1_line1 %><br><span><%= c.hero.h1_line2 %></span></h1>
   <p><%= c.hero.subhead %></p>
   <div class="hero-actions">
-    <a href="#download" class="btn btn-primary"><%= c.hero.cta_primary %></a>
+    <a href="#pricing" class="btn btn-primary"><%= c.hero.cta_primary %></a>
     <a href="#pricing"  class="btn btn-outline"><%= c.hero.cta_secondary %></a>
   </div>
 </div>
@@ -246,12 +246,11 @@
       <div class="pricing-card featured">
         <div class="badge-featured"><%= c.pricing.full_featured_label %></div>
         <p class="tier accent"><%= c.pricing.full_badge %></p>
-        <p class="price"><%= cfg.full_price %></p>
-        <p class="price-note"><%= c.pricing.full_price_note %></p>
+        <p class="price-note" style="margin-bottom:1.5rem;"><%= c.pricing.full_price_note %></p>
         <ul>
           <% c.pricing.full_features_yes.forEach(function(f) { %><li class="yes"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><%= f %></li><% }); %>
         </ul>
-        <a href="<%= cfg.full_buy_url %>" class="btn btn-primary" style="width:100%;text-align:center;"><%= c.pricing.full_cta %> — <%= cfg.full_price %>/<%= locale === 'pt' ? 'ano' : 'year' %></a>
+        <span class="btn btn-outline" style="width:100%;text-align:center;opacity:.5;cursor:default;"><%= c.pricing.full_coming_soon %></span>
       </div>
 
     </div>
@@ -260,24 +259,6 @@
         <% if (i > 0) { %><br /><% } %><%= line %>
       <% }); %>
     </p>
-  </div>
-</section>
-
-<!-- Download -->
-<section id="download" style="background: var(--surface);">
-  <div class="section-inner">
-    <p class="section-label"><%= c.download.label %></p>
-    <h2 class="section-title"><%= c.download.title %></h2>
-    <p class="section-sub"><%= c.download.sub %></p>
-    <div class="download-grid">
-      <a href="<%= cfg.download_url %>" class="download-card">
-        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/></svg>
-        <div>
-          <div class="dl-label"><%= c.download.windows_label %></div>
-          <div class="dl-name"><%= c.download.windows_name %></div>
-        </div>
-      </a>
-    </div>
   </div>
 </section>
 

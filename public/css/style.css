@@ -495,6 +495,121 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
 .privacy-wrap code { font-family: monospace; font-size: .9em; background: var(--surface2); padding: .1em .35em; border-radius: 4px; }
 @media (max-width: 600px) { .privacy-wrap { padding: 1.5rem; margin: 1rem; } }
 
+/* ── Support page ────────────────────────────────────────────────────────── */
+.support-wrap {
+  max-width: 720px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+.support-wrap .back { display: inline-block; margin-bottom: 1.5rem; font-size: .875rem; color: var(--accent); }
+.support-wrap h1 { font-size: 2rem; font-weight: 800; color: var(--text); margin-bottom: .5rem; }
+.support-sub { font-size: 1rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.7; }
+
+.support-email-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+}
+.support-email-banner > svg { width: 1.5rem; height: 1.5rem; color: var(--accent); flex-shrink: 0; }
+.support-email-banner > div { display: flex; align-items: center; flex-wrap: wrap; gap: .4rem .75rem; font-size: .9rem; }
+.support-email-label { color: var(--muted); }
+.support-email-banner a { color: var(--accent); font-weight: 600; }
+.support-email-note { color: var(--subtle); font-size: .8rem; }
+
+.support-section { margin-bottom: 3.5rem; }
+.support-section-title { font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: .5rem; }
+.support-section-sub { font-size: .9rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.7; }
+
+/* FAQ accordion */
+.faq-list { display: flex; flex-direction: column; gap: .5rem; }
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color .15s;
+}
+.faq-item[open] { border-color: var(--accent); }
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  font-size: .925rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q:hover { color: var(--accent); }
+.faq-chevron { width: 1rem; height: 1rem; flex-shrink: 0; color: var(--subtle); transition: transform .2s; }
+.faq-item[open] .faq-chevron { transform: rotate(180deg); }
+.faq-a {
+  padding: 0 1.25rem 1rem;
+  font-size: .875rem;
+  color: var(--muted);
+  line-height: 1.75;
+  border-top: 1px solid var(--border);
+  padding-top: .75rem;
+}
+
+/* Contact form */
+.contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+.form-group { display: flex; flex-direction: column; gap: .4rem; }
+.form-group label { font-size: .875rem; font-weight: 600; color: var(--text); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .6rem .85rem;
+  font-size: .9rem;
+  color: var(--text);
+  font-family: inherit;
+  transition: border-color .15s;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.form-group textarea { resize: vertical; min-height: 140px; line-height: 1.6; }
+.form-group select { appearance: none; cursor: pointer; }
+.form-actions { display: flex; }
+
+/* Alert messages */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: .875rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  margin-bottom: 1.75rem;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+.alert > svg { width: 1.25rem; height: 1.25rem; flex-shrink: 0; margin-top: .1rem; }
+.alert strong { display: block; font-weight: 700; margin-bottom: .2rem; }
+.alert p { margin: 0; }
+.alert-success { background: rgba(20,184,166,.1); border: 1px solid rgba(20,184,166,.3); color: var(--text); }
+.alert-success > svg { color: var(--accent); }
+.alert-error { background: rgba(239,68,68,.08); border: 1px solid rgba(239,68,68,.25); color: var(--text); }
+.alert-error > svg { color: #ef4444; }
+.alert-error a { color: var(--accent); }
+
 /* ── 404 page ────────────────────────────────────────────────────────────── */
 .notfound {
   min-height: 100vh;

@@ -1,0 +1,99 @@
+<%- include('../partials/head', { title: c.support_page.title, locale, c, cfg, supported, page: 'support' }) %>
+<%- include('../partials/nav',  { locale, c, cfg, supported, page: 'support' }) %>
+
+<div class="support-wrap">
+  <a class="back" href="/<%= locale %>/"><%- c.support_page.back_link %></a>
+  <h1><%= c.support_page.h1 %></h1>
+  <p class="support-sub"><%= c.support_page.sub %></p>
+
+  <% if (query.sent) { %>
+  <div class="alert alert-success">
+    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+    </svg>
+    <div>
+      <strong><%= c.support_page.sent_title %></strong>
+      <p><%= c.support_page.sent_body %></p>
+    </div>
+  </div>
+  <% } else if (query.error) { %>
+  <div class="alert alert-error">
+    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/>
+    </svg>
+    <div>
+      <strong><%= c.support_page.error_title %></strong>
+      <p><%= c.support_page.error_body %> <a href="mailto:<%= cfg.support_email %>"><%= cfg.support_email %></a></p>
+    </div>
+  </div>
+  <% } %>
+
+  <div class="support-email-banner">
+    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+    </svg>
+    <div>
+      <span class="support-email-label"><%= c.support_page.email_label %></span>
+      <a href="mailto:<%= cfg.support_email %>"><%= cfg.support_email %></a>
+      <span class="support-email-note"><%= c.support_page.email_note %></span>
+    </div>
+  </div>
+
+  <%/* ── FAQ ──────────────────────────────────────────────────────────────── */%>
+  <section class="support-section">
+    <h2 class="support-section-title"><%= c.support_page.faq_title %></h2>
+    <div class="faq-list">
+      <% c.support_page.faq_items.forEach(function(item) { %>
+      <details class="faq-item">
+        <summary class="faq-q">
+          <%= item.q %>
+          <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+          </svg>
+        </summary>
+        <p class="faq-a"><%= item.a %></p>
+      </details>
+      <% }); %>
+    </div>
+  </section>
+
+  <%/* ── Contact form ──────────────────────────────────────────────────────── */%>
+  <section class="support-section">
+    <h2 class="support-section-title"><%= c.support_page.contact_title %></h2>
+    <p class="support-section-sub"><%= c.support_page.contact_sub %></p>
+
+    <form class="contact-form" method="POST" action="/<%= locale %>/support">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contact-name"><%= c.support_page.field_name %></label>
+          <input id="contact-name" type="text" name="name" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email"><%= c.support_page.field_email %></label>
+          <input id="contact-email" type="email" name="email" required autocomplete="email" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-subject"><%= c.support_page.field_subject %></label>
+        <select id="contact-subject" name="subject">
+          <% c.support_page.subject_options.forEach(function(opt) { %>
+          <option value="<%= opt %>"><%= opt %></option>
+          <% }); %>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message"><%= c.support_page.field_message %></label>
+        <textarea id="contact-message" name="message" rows="6" required
+          placeholder="<%= c.support_page.field_message_placeholder %>"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary"><%= c.support_page.submit %></button>
+      </div>
+    </form>
+  </section>
+</div>
+
+<%- include('../partials/footer', { locale, c, cfg, supported, page: 'support' }) %>

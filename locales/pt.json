@@ -205,7 +205,7 @@
     "base_cta": "Comprar agora",
     "full_badge": "Full",
     "full_featured_label": "Mais completo",
-    "full_price_note": "Por ano · atualizações incluídas",
+    "full_price_note": "Subscrição anual · brevemente disponível",
     "full_features_yes": [
       "Tudo do Base",
       "Taxa de poupança e projeção de património líquido",
@@ -216,6 +216,7 @@
       "Atualizações de software incluídas"
     ],
     "full_cta": "Comprar agora",
+    "full_coming_soon": "Brevemente",
     "footnote": "O Teste e o Base são bloqueados à versão — a licença que compras mantém-se válida para a versão instalada; não há atualizações futuras incluídas.\nOs subscritores Full recebem todas as atualizações enquanto a subscrição anual estiver ativa."
   },
   "download": {
@@ -297,5 +298,40 @@
       { "title": "Como pedir um reembolso", "body": "As compras são processadas pela Paddle como Merchant of Record, pelo que os reembolsos são emitidos pela Paddle. Responde ao email do recibo da Paddle, ou contacta o nosso email de suporte com o número da encomenda, e trataremos do pedido. Os reembolsos são devolvidos ao método de pagamento original, normalmente em 5 a 10 dias úteis." },
       { "title": "Renovações de subscrição", "body": "Cancelar uma subscrição Full trava renovações futuras a qualquer momento. Se uma renovação tiver sido cobrada nos últimos 14 dias, podes pedir o reembolso dessa cobrança." }
     ]
+  },
+  "support_page": {
+    "title": "Suporte — Meridian",
+    "meta_desc": "Obtém ajuda com o Meridian — FAQs, formulário de contacto e email direto.",
+    "back_link": "← Meridian",
+    "h1": "Suporte",
+    "sub": "A maioria das dúvidas está respondida abaixo. Se não encontrares o que precisas, usa o formulário de contacto ou envia-nos um email diretamente.",
+    "email_label": "Email",
+    "email_note": "Respondemos em até 1 dia útil.",
+    "faq_title": "Perguntas frequentes",
+    "faq_items": [
+      { "q": "Onde é que o Meridian guarda os meus dados?", "a": "Na tua máquina, num ficheiro SQLite em %APPDATA%\\Meridian\\meridian.db no Windows, ou num volume Docker que controlas. Nada é enviado para qualquer servidor do Meridian — não existe nenhum." },
+      { "q": "O que acontece quando o período de teste termina?", "a": "A app passa para modo só de leitura — ainda consegues ver tudo, mas adicionar transações, editar categorias e fazer alterações requer uma licença Base ou Full. Nada é apagado." },
+      { "q": "Como ativo a minha licença?", "a": "Após a compra, recebes uma chave de licença por email. Abre o Meridian, vai a Definições → Licença, cola a chave e clica em Ativar. A app liga-se uma vez ao nosso servidor de ativação para associar a chave à tua máquina, depois funciona offline a partir daí." },
+      { "q": "Posso aceder ao Meridian no telemóvel?", "a": "Sim, no Base e Full. Vai a Definições → Acesso por Telemóvel, gera um certificado HTTPS local, e consegues aceder à app por qualquer browser na tua rede doméstica — ou em qualquer lado via Tailscale." },
+      { "q": "Perdi a chave de licença. Consigo recuperá-la?", "a": "A chave foi enviada para o email que indicaste na Paddle no momento da compra. Procura um email da Meridian ou da Paddle com o assunto 'A tua licença Meridian'. Se não encontrares, envia-nos um email com o número da encomenda." },
+      { "q": "Como importo o meu extrato bancário?", "a": "Vai ao separador Carregar, arrasta o ficheiro CSV ou XLS, define o mapeamento de colunas uma vez, e o Meridian trata do resto — categorias, deduplicação, controlo de saldo. Os formatos CGD, Millennium, Santander, Montepio e Activo Bank funcionam sem qualquer configuração extra." },
+      { "q": "O Meridian funciona no Mac ou Linux?", "a": "A app Electron é apenas para Windows de momento. Se usas Linux, a imagem Docker funciona em qualquer máquina com Docker instalado — mesma app, mesmas funcionalidades, acedida pelo browser." },
+      { "q": "Qual é a diferença entre Base e Full?", "a": "O Base custa €39 uma vez — sem subscrição, teu para sempre. O Full custa €59/ano e adiciona projeções de património líquido, monitorização da taxa de poupança, alertas de marcos, backups encriptados e integrações de sincronização bancária. Se tens dúvidas, o Base cobre a grande maioria do uso diário." },
+      { "q": "Como cancelo a minha subscrição Full?", "a": "Usa o link de cancelamento no email de recibo da Paddle, ou contacta-nos com o número da encomenda e tratamos disso. Após o cancelamento, a tua subscrição continua até ao fim do período atual, e depois a app passa a funcionar com as funcionalidades Base." },
+      { "q": "As minhas transações não estão a ser categorizadas automaticamente.", "a": "A categorização automática funciona com regras que tu crias — o Meridian não inclui regras predefinidas porque as descrições bancárias variam muito entre bancos e contas. Vai a Carregar → Regras, adiciona algumas regras por palavras-chave para os teus comerciantes habituais, e elas aplicam-se imediatamente a todas as transações correspondentes." }
+    ],
+    "contact_title": "Envia-nos uma mensagem",
+    "contact_sub": "Preenche o formulário abaixo e respondemos em até 1 dia útil.",
+    "field_name": "O teu nome",
+    "field_email": "O teu email",
+    "field_subject": "Assunto",
+    "subject_options": ["Questão geral", "Relatório de erro", "Problema com licença", "Pedido de reembolso", "Outro"],
+    "field_message": "Mensagem",
+    "field_message_placeholder": "Descreve a tua dúvida ou problema…",
+    "submit": "Enviar mensagem",
+    "sent_title": "Mensagem enviada",
+    "sent_body": "Obrigado — respondemos em até 1 dia útil.",
+    "error_title": "Não foi possível enviar a mensagem",
+    "error_body": "Ocorreu um erro. Envia-nos um email diretamente para"
   }
 }

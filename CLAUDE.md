@@ -37,8 +37,9 @@ dev:   node --watch server.js
 
   /              → 301 to /pt/ or /en/ (Accept-Language)
   /:locale/      → marketing page (pt | en)
-  /:locale/privacy · /:locale/terms · /:locale/refunds
-  /privacy /terms /refunds → 301 to detected locale
+  /:locale/privacy · /:locale/terms · /:locale/refunds · /:locale/support
+  /privacy /terms /refunds /support → 301 to detected locale
+  /:locale/support POST → contact form handler (Resend API; requires RESEND_API_KEY)
   /sitemap.xml   → generated from BASE_URL
   anything else  → branded 404
 
@@ -69,6 +70,26 @@ dev:   node --watch server.js
   Supported: ['en', 'pt']
   Content in locales/*.json (NOT in DB)
   PT register: informal "tu" — keep consistent in all new copy
+  PT dialect: PT-PT only, not PT-BR — natural European Portuguese cadence
+
+---
+
+# Copy voice
+
+  marketing sections: first-person founder voice — honest, plain, direct
+  story arc: too many spreadsheets → weekend script → visuals/categories →
+             net worth/projections → tasks/reminders → health
+  avoid: marketing fluff, passive constructions, technical jargon for general audience
+  jargon to avoid (use plain alternative):
+    iteration          → version
+    retroactively      → back through your existing history
+    cross-reference    → link to
+    balance-chain validation / parse → plain description of what it checks
+    French amortisation → standard amortisation
+    token-authenticated → password-protected
+    workbooks / multi-sheet → spreadsheets with multiple tabs
+    % delta            → percentage change
+  legal pages (privacy/terms/refunds): formal register, leave untouched
 
 ---
 
@@ -85,7 +106,9 @@ dev:   node --watch server.js
 
   railway:
     Set BASE_URL=https://meridian.pt env var
-    Custom domain meridian.pt → Railway project → Networking → Custom domain
+    Set RESEND_API_KEY env var (contact form delivery)
+    Set RESEND_FROM_EMAIL=hello@meridian.pt (must be verified Resend sender)
+    Custom domain meridian.pt → Railway project �� Networking → Custom domain
     DNS: @ and www → Railway IP/CNAME (PTisp panel)
     TLS: auto via Let's Encrypt once DNS propagates
 
