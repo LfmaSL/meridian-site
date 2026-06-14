@@ -45,8 +45,8 @@
     "sub": "Arrasta um export do banco. O Meridian lê as colunas, mapeia-as para os campos certos e lembra-se do formato para a próxima vez — as importações seguintes precisam de um clique.",
     "card1_title": "XLS e XLSX",
     "card1_body": "Qualquer export de folha de cálculo de qualquer banco. Um mapeador de colunas deixa-te atribuir data, descrição, montante e saldo a partir da linha de cabeçalho. Suporte a ficheiros com múltiplos separadores — o Meridian escolhe o certo.",
-    "card2_title": "Extratos em PDF",
-    "card2_body": "Extratos em PDF com múltiplas páginas e colunas. Depois de analisar, verifica que os saldos batem certo em todas as páginas — sabes logo se faltou uma página.",
+    "card2_title": "Importações sem duplicados",
+    "card2_body": "Cada importação verifica cada transação contra o que já tens — por data, descrição e montante. Reenviar o mesmo ficheiro ou importar intervalos de datas sobrepostos é sempre seguro. O resumo da importação diz-te exatamente o que foi adicionado e o que foi ignorado.",
     "card3_title": "Exports em texto",
     "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido a partir do histórico de transações — sem ajuste manual de datas.",
     "note": "A deteção de duplicados corre em cada importação — podes reenviar o mesmo ficheiro sem risco. A contagem de importados e duplicados ignorados aparece no final de cada execução."
@@ -187,7 +187,7 @@
     "base_price_note": "Uma vez · para sempre",
     "base_features_yes": [
       "Tudo do Teste, sem limites",
-      "Todos os formatos de importação (XLS, PDF, TXT)",
+      "Todos os formatos de importação (XLS, TXT)",
       "Regras de categorização automática e histórico de importações",
       "Deteção automática e calendários de pagamento de dívidas",
       "Acesso pelo telemóvel (LAN / Tailscale)",
