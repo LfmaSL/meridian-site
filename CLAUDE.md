@@ -108,7 +108,7 @@ dev:   node --watch server.js
     Set BASE_URL=https://meridian.pt env var
     Set RESEND_API_KEY env var (contact form delivery)
     Set RESEND_FROM_EMAIL=hello@meridian.pt (must be verified Resend sender)
-    Custom domain meridian.pt → Railway project �� Networking → Custom domain
+    Custom domain meridian.pt → Railway project → Networking → Custom domain
     DNS: @ and www → Railway IP/CNAME (PTisp panel)
     TLS: auto via Let's Encrypt once DNS propagates
 
