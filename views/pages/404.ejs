@@ -11,10 +11,7 @@
 </head>
 <body>
   <div class="notfound">
-    <svg width="48" height="48" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-      <rect width="512" height="512" rx="100" fill="#14b8a6"/>
-      <path d="M 120 390 L 120 160 L 256 290 L 392 160 L 392 390" stroke="white" stroke-width="64" stroke-linejoin="round" stroke-linecap="round"/>
-    </svg>
+    <img src="/logo.svg" width="48" height="48" aria-hidden="true" style="border-radius:10px;"/>
     <h1>404</h1>
     <p><%= locale === 'pt' ? 'Esta página não existe.' : 'This page does not exist.' %></p>
     <a href="/<%= locale %>/" class="btn btn-primary"><%= locale === 'pt' ? 'Voltar ao início' : 'Back to home' %></a>

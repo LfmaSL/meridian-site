@@ -64,7 +64,7 @@
     "card2_items": ["WebAuthn (passkey) authentication", "Credentials stored on-device only", "No email required to use the app"],
     "card3_title": "You own everything",
     "card3_body": "Export your entire dataset as JSON any time. Move to a new machine, audit it, back it up — Meridian never holds your data hostage.",
-    "card3_items": ["Full JSON export (all tiers)", "JSON import / restore (Base & Full)", "No vendor lock-in"]
+    "card3_items": ["Full JSON export (all tiers)", "JSON import / restore (Essential & Plus)", "No vendor lock-in"]
   },
   "finance": {
     "label": "Finance",
@@ -86,16 +86,16 @@
     "card4_tier": "All tiers",
     "card5_title": "Net worth projection",
     "card5_body": "Assets versus debts over time, plotted as an area chart. Built from your import history — updated automatically each time new transactions come in, with no manual input.",
-    "card5_tier": "Full",
+    "card5_tier": "Plus",
     "card6_title": "Savings rate",
     "card6_body": "Six-month rolling average, calculated automatically from your income and expense history. No formula to maintain — it updates on every import and shows you the trend over time.",
-    "card6_tier": "Full",
+    "card6_tier": "Essential & Plus",
     "card7_title": "Goal & debt milestones",
     "card7_body": "Set percentage thresholds on any goal or debt. Meridian fires a push notification the moment you cross 50% or hit 100% — triggered automatically as new transactions are imported.",
-    "card7_tier": "Full",
+    "card7_tier": "Plus",
     "card8_title": "Debt amortisation schedules",
     "card8_body": "Standard amortisation for mortgages and loans: full payment schedule with principal/interest split, extra payment logging, and a keyword that auto-detects payments on import and keeps the balance current.",
-    "card8_tier": "Base & Full"
+    "card8_tier": "Essential & Plus"
   },
   "health": {
     "label": "Health & habits",
@@ -106,13 +106,13 @@
     "card1_tier": "All tiers",
     "card2_title": "Custom health metrics",
     "card2_body": "Log weight, sleep, mood, water — or define your own metrics with custom names, units, and colours. Set a goal per metric and see your daily gap at a glance. Trend charts over 30 or 90 days.",
-    "card2_tier": "Base & Full",
+    "card2_tier": "Essential & Plus",
     "card3_title": "Habits with streaks",
     "card3_body": "Daily habit tracking alongside your health log. Each habit shows a current streak, a 7-day week grid, and a 30-day completion rate. Check off from the home screen or the Health tab.",
     "card3_tier": "All tiers",
     "card4_title": "Phone access",
     "card4_body": "Install as a PWA on your phone and reach Meridian from any device on your local network — or over Tailscale from anywhere. No port forwarding, no cloud relay, no exposure.",
-    "card4_tier": "Base & Full"
+    "card4_tier": "Essential & Plus"
   },
   "automations": {
     "label": "Automations",
@@ -120,23 +120,23 @@
     "sub": "Every automation runs locally, on your machine, with no external API calls.",
     "card1_title": "Auto-categorise transactions",
     "card1_body": "Define keyword rules once. Every import is classified automatically — groceries, utilities, subscriptions — without touching a single transaction by hand. Rules can be applied back through your existing history.",
-    "card1_tier": "Base & Full",
+    "card1_tier": "Essential & Plus",
     "card2_title": "Debt payment detection",
     "card2_body": "Assign a keyword to each debt. When a matching transaction is imported, Meridian logs the payment and reduces the outstanding balance — no manual update needed.",
-    "card2_tier": "Base & Full",
+    "card2_tier": "Essential & Plus",
     "card3_title": "Push notifications",
     "card3_body": "Get notified when a budget is exceeded after an import, when it's time to log your health metrics, or when a task is due — delivered via your device's notification system, no third-party service involved.",
-    "card3_tier": "Base & Full",
+    "card3_tier": "Essential & Plus",
     "card4_title": "Goal & debt milestone alerts",
     "card4_body": "Set up to two percentage thresholds per goal or debt — say 50% and 100%. Meridian fires a notification the moment a threshold is crossed, triggered automatically as transactions arrive.",
-    "card4_tier": "Full"
+    "card4_tier": "Plus"
   },
   "full_tier": {
-    "label": "Full tier",
+    "label": "Plus tier",
     "title": "Stay current, without the effort",
-    "sub": "Full adds the features that do the analysis for you — and keeps the app updated as Meridian grows.",
-    "item1_title": "Net worth projection + savings rate",
-    "item1_body": "Your assets, debts, and 6-month rolling savings rate — calculated automatically from import history. See where you are and where you're headed without lifting a finger.",
+    "sub": "Plus adds the features that do the analysis for you — and keeps the app updated as Meridian grows.",
+    "item1_title": "Net worth projection + forward plan",
+    "item1_body": "Your assets and debts plotted over time with a 6-month forward projection — calculated automatically from import history. See where you are and where you're headed without lifting a finger. (Savings rate is included from Essential.)",
     "item2_title": "Milestone alerts on goals & debts",
     "item2_body": "Set percentage thresholds once. Meridian notifies you automatically when you cross them — as soon as a new import hits, not days later when you remember to check.",
     "item3_title": "Local MCP server",
@@ -147,30 +147,30 @@
     "coming1_title": "Automated bank sync",
     "coming1_body": "EnableBanking (PSD2) integration for supported EU banks — transactions arrive automatically instead of a monthly manual export. XLS upload stays as fallback.",
     "coming2_title": "Local AI chat",
-    "coming2_body": "Ask plain-English questions answered by your own data via Ollama — \"what did I spend on food last quarter?\" — entirely offline, using the MCP tools already in Full."
+    "coming2_body": "Ask plain-English questions answered by your own data via Ollama — \"what did I spend on food last quarter?\" — entirely offline, using the MCP tools already in Plus."
   },
   "pricing": {
     "label": "Pricing",
     "title": "Two paths. Both private.",
-    "sub": "Base has everything you need, once, forever. Full adds deeper analysis and continuous updates — for when you don't want to think about it.",
+    "sub": "Essential has everything you need, once, forever. Plus adds deeper analysis and continuous updates — for when you don't want to think about it.",
     "trial_badge": "Free Trial",
     "trial_price": "Free",
     "trial_price_note": "31 days · no credit card required",
     "trial_features_yes": ["Transactions, categories, budgets", "Goals & debt tracking", "Monthly income/expense projection", "Health log & habits (5 of each)", "Task management & recurring tasks", "JSON export"],
     "trial_features_no": ["Auto-categorisation rules", "Phone access", "Push notifications", "Encrypted backup"],
     "trial_cta": "Download",
-    "base_badge": "Base",
+    "base_badge": "Essential",
     "base_price_note": "One-time · yours forever",
-    "base_features_yes": ["Everything in Trial, no limits", "All import formats (XLS, TXT)", "Auto-categorisation rules & import history", "Debt payment keyword auto-log & schedules", "Phone access (LAN / Tailscale)", "Push notifications (tasks, budgets, health)", "JSON export + import", "Health trend charts", "Task & habit reminders"],
-    "base_features_no": ["Savings rate & net worth projection", "Milestone alerts", "Encrypted backup", "MCP / AI integration"],
+    "base_features_yes": ["Everything in Trial, no limits", "All import formats (XLS, TXT)", "Auto-categorisation rules & import history", "Savings rate (6-month avg)", "Debt payment keyword auto-log & schedules", "Phone access (LAN / Tailscale)", "Push notifications (tasks, budgets, health)", "JSON export + import", "Health trend charts", "Task & habit reminders"],
+    "base_features_no": ["Net worth projection + forward chart", "Milestone alerts", "Encrypted backup", "MCP / AI integration"],
     "base_cta": "Buy now",
-    "full_badge": "Full",
+    "full_badge": "Plus",
     "full_featured_label": "Most complete",
     "full_price_note": "Annual subscription · coming soon",
-    "full_features_yes": ["Everything in Base", "Savings rate & net worth projection", "Goal & debt milestone alerts", "Encrypted backup (.enc)", "MCP server (AI assistant integration)", "Admin panel & log viewer", "Software updates included"],
+    "full_features_yes": ["Everything in Essential", "Net worth projection + forward chart", "Goal & debt milestone alerts", "Encrypted backup (.enc)", "MCP server (AI assistant integration)", "Admin panel & log viewer", "Software updates included"],
     "full_cta": "Buy now",
     "full_coming_soon": "Coming soon",
-    "footnote": "Trial and Base are version-locked — the license you buy stays valid for the version installed; no future updates are delivered.\nFull subscribers receive all software updates while their annual subscription is active."
+    "footnote": "Trial and Essential are version-locked — the license you buy stays valid for the version installed; no future updates are delivered.\nPlus subscribers receive all software updates while their annual subscription is active."
   },
   "download": {
     "label": "Download",
@@ -223,9 +223,9 @@
     "contact_lead": "Questions about these terms:",
     "sections": [
       { "title": "Overview", "body": "These terms govern your purchase and use of Meridian, a desktop application for personal finance, health, task, and habit tracking. By installing the app or purchasing a license you agree to these terms." },
-      { "title": "Licenses and tiers", "body": "Meridian offers a free 31-day trial, a Base license, and a Full subscription. The trial and Base licenses are version-locked: they remain valid indefinitely for the version installed at the time of purchase, and no future updates are included. The Full subscription is billed annually and includes all software updates while it is active. Licenses are for personal use on devices you own or control, and may not be resold or redistributed." },
+      { "title": "Licenses and tiers", "body": "Meridian offers a free 31-day trial, an Essential license, and a Plus subscription. The trial and Essential licenses are version-locked: they remain valid indefinitely for the version installed at the time of purchase, and no future updates are included. The Plus subscription is billed annually and includes all software updates while it is active. Licenses are for personal use on devices you own or control, and may not be resold or redistributed." },
       { "title": "Payments", "body": "Purchases are processed by Paddle.com Market Limited, acting as Merchant of Record. Paddle handles checkout, invoicing, applicable taxes, and payment data, governed by Paddle's own terms and privacy policy. Meridian never receives your payment details." },
-      { "title": "Subscriptions and cancellation", "body": "Full subscriptions renew annually until cancelled. You can cancel at any time via the link in your Paddle receipt or by contacting support. Cancellation stops future renewals; the app continues to work at the last version delivered to you." },
+      { "title": "Subscriptions and cancellation", "body": "Plus subscriptions renew annually until cancelled. You can cancel at any time via the link in your Paddle receipt or by contacting support. Cancellation stops future renewals; the app continues to work at the last version delivered to you." },
       { "title": "Refunds", "body": "Refunds are handled according to our Refund Policy, available on this site." },
       { "title": "Acceptable use", "body": "You may not share, resell, or redistribute license keys, or attempt to circumvent license validation. Reverse engineering is not permitted except to the extent allowed by applicable law." },
       { "title": "No financial advice", "body": "Meridian is a record-keeping and visualisation tool. Nothing in the app constitutes financial, investment, tax, or health advice." },
@@ -244,7 +244,7 @@
       { "title": "Try before you buy", "body": "Meridian offers a full 31-day free trial with no credit card required. We encourage you to use the trial to make sure the app fits your needs before purchasing." },
       { "title": "14-day right of withdrawal", "body": "If you are a consumer in the EU, EEA, or UK, you may withdraw from your purchase within 14 days of the transaction without giving a reason, in line with applicable consumer law. Consumers elsewhere may also request a refund within 14 days of purchase." },
       { "title": "How to request a refund", "body": "Purchases are processed by Paddle as Merchant of Record, so refunds are issued by Paddle. Reply to your Paddle receipt email, or contact our support email with your order number, and we will process the request. Refunds are returned to the original payment method, typically within 5–10 business days." },
-      { "title": "Subscription renewals", "body": "Cancelling a Full subscription stops future renewals at any time. If a renewal charge was made within the last 14 days, you may request a refund of that charge." }
+      { "title": "Subscription renewals", "body": "Cancelling a Plus subscription stops future renewals at any time. If a renewal charge was made within the last 14 days, you may request a refund of that charge." }
     ]
   },
   "support_page": {
@@ -258,14 +258,14 @@
     "faq_title": "Frequently asked questions",
     "faq_items": [
       { "q": "Where does Meridian store my data?", "a": "On your machine, in a SQLite file at %APPDATA%\\Meridian\\meridian.db on Windows, or in a Docker volume you control. Nothing is sent to any Meridian server — there isn't one." },
-      { "q": "What happens when the trial ends?", "a": "The app switches to read-only mode — you can still view everything, but adding transactions, editing categories, and making changes requires a Base or Full license. Nothing is deleted." },
+      { "q": "What happens when the trial ends?", "a": "The app switches to read-only mode — you can still view everything, but adding transactions, editing categories, and making changes requires an Essential or Plus license. Nothing is deleted." },
       { "q": "How do I activate my license?", "a": "After purchasing, you'll receive a license key by email. Open Meridian, go to Settings → License, paste the key, and click Activate. The app connects to our activation server once to bind the key to your machine, then works offline after that." },
-      { "q": "Can I access Meridian on my phone?", "a": "Yes, on Base and Full. Go to Settings → Phone Access, generate a local HTTPS certificate, and you can reach the app from any browser on your home network — or anywhere via Tailscale." },
+      { "q": "Can I access Meridian on my phone?", "a": "Yes, on Essential and Plus. Go to Settings → Phone Access, generate a local HTTPS certificate, and you can reach the app from any browser on your home network — or anywhere via Tailscale." },
       { "q": "I lost my license key. Can I get it back?", "a": "Your key was sent to the email you gave Paddle at checkout. Search for an email from Meridian or Paddle with the subject 'Your Meridian license'. If you can't find it, contact us with your order number." },
       { "q": "How do I import my bank statement?", "a": "Go to the Upload tab, drag your CSV or XLS file, map the columns once, and Meridian handles the rest — categories, deduplication, balance tracking. CGD, Millennium, Santander, Montepio, and Activo Bank formats work without any extra configuration." },
       { "q": "Does Meridian work on Mac or Linux?", "a": "The Electron desktop app is Windows-only for now. If you're on Linux, the Docker image works on any machine with Docker installed — same app, same features, accessed from your browser." },
-      { "q": "What's the difference between Base and Full?", "a": "Base is €39 once — no subscription, yours forever. Full is €59/year and adds net worth projections, savings rate tracking, milestone alerts, encrypted backups, and bank sync integrations. If you're unsure, Base covers the vast majority of everyday use." },
-      { "q": "How do I cancel my Full subscription?", "a": "Use the cancellation link in your Paddle receipt email, or contact us with your order number and we'll handle it. After cancellation, your subscription continues until the current period ends, then the app runs with Base features." },
+      { "q": "What's the difference between Essential and Plus?", "a": "Essential is €39 once — no subscription, yours forever. Plus is €59/year and adds net worth projection, milestone alerts, encrypted backups, and bank sync integrations. If you're unsure, Essential covers the vast majority of everyday use — including savings rate." },
+      { "q": "How do I cancel my Plus subscription?", "a": "Use the cancellation link in your Paddle receipt email, or contact us with your order number and we'll handle it. After cancellation, your subscription continues until the current period ends, then the app runs with Essential features." },
       { "q": "My transactions aren't being categorised automatically.", "a": "Auto-categorisation works from rules you create — Meridian doesn't ship with built-in rules because bank descriptions vary too much between banks and accounts. Go to Upload → Rules, add a few keyword rules for your regular merchants, and they'll apply to all matching transactions straight away." }
     ],
     "contact_title": "Send us a message",

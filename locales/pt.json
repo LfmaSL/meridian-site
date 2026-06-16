@@ -74,7 +74,7 @@
     "card3_body": "Exportas o teu conjunto de dados completo como JSON a qualquer momento. Migras para outra máquina, fazes backup, auditas — o Meridian não retém nada.",
     "card3_items": [
       "Export JSON completo (todos os planos)",
-      "Import / restauro JSON (Base e Full)",
+      "Import / restauro JSON (Essential e Plus)",
       "Sem dependência de fornecedor"
     ]
   },
@@ -98,16 +98,16 @@
     "card4_tier": "Todos os planos",
     "card5_title": "Projeção de património líquido",
     "card5_body": "Ativos versus dívidas ao longo do tempo, num gráfico de área. Construído a partir do histórico de importações — atualiza-se sozinho cada vez que chegam novas transações.",
-    "card5_tier": "Full",
+    "card5_tier": "Plus",
     "card6_title": "Taxa de poupança",
     "card6_body": "Média móvel de seis meses, calculada a partir do histórico de rendimentos e despesas. Sem fórmula para manter — atualiza em cada importação.",
-    "card6_tier": "Full",
+    "card6_tier": "Essential & Plus",
     "card7_title": "Marcos de objetivos e dívidas",
     "card7_body": "Define limites percentuais em qualquer objetivo ou dívida. O Meridian envia uma notificação push quando cruzas 50% ou chegas a 100% — ativado automaticamente com cada importação.",
-    "card7_tier": "Full",
+    "card7_tier": "Plus",
     "card8_title": "Calendários de amortização",
     "card8_body": "Amortização padrão para hipotecas e empréstimos: calendário de pagamentos completo com divisão capital/juros, registo de pagamentos extra e uma palavra-chave que deteta os pagamentos automaticamente na importação.",
-    "card8_tier": "Base e Full"
+    "card8_tier": "Essential e Plus"
   },
   "health": {
     "label": "Saúde e hábitos",
@@ -118,13 +118,13 @@
     "card1_tier": "Todos os planos",
     "card2_title": "Métricas de saúde personalizadas",
     "card2_body": "Regista peso, sono, humor, água — ou define as tuas próprias métricas com nomes, unidades e cores. Define uma meta por métrica e vê o registo diário de relance. Gráficos de tendência a 30 ou 90 dias.",
-    "card2_tier": "Base e Full",
+    "card2_tier": "Essential e Plus",
     "card3_title": "Hábitos com sequências",
     "card3_body": "Registo diário de hábitos ao lado do registo de saúde. Cada hábito mostra a sequência atual, uma grelha semanal de 7 dias e uma taxa de conclusão a 30 dias. Marcas no ecrã inicial ou no separador Saúde.",
     "card3_tier": "Todos os planos",
     "card4_title": "Acesso pelo telemóvel",
     "card4_body": "Instala como PWA no telemóvel e acede ao Meridian de qualquer dispositivo na tua rede local — ou via Tailscale de qualquer lugar. Sem reencaminhamento de portas, sem relay cloud.",
-    "card4_tier": "Base e Full"
+    "card4_tier": "Essential e Plus"
   },
   "automations": {
     "label": "Automações",
@@ -132,23 +132,23 @@
     "sub": "Cada automação corre localmente, na tua máquina, sem chamadas a APIs externas.",
     "card1_title": "Categorização automática de transações",
     "card1_body": "Defines as regras por palavra-chave uma vez. Cada importação é classificada automaticamente — mercearias, serviços, subscrições — sem tocar numa transação manualmente. As regras podem ser aplicadas ao histórico existente.",
-    "card1_tier": "Base e Full",
+    "card1_tier": "Essential e Plus",
     "card2_title": "Deteção de pagamentos de dívidas",
     "card2_body": "Atribuis uma palavra-chave a cada dívida. Quando uma transação correspondente é importada, o Meridian regista o pagamento e reduz o saldo — sem atualização manual.",
-    "card2_tier": "Base e Full",
+    "card2_tier": "Essential e Plus",
     "card3_title": "Notificações push",
     "card3_body": "Notificações quando um orçamento é excedido após uma importação, quando é hora de registar saúde ou quando uma tarefa está prestes a vencer — via o sistema de notificações do teu dispositivo, sem serviço de terceiros.",
-    "card3_tier": "Base e Full",
+    "card3_tier": "Essential e Plus",
     "card4_title": "Alertas de marcos de objetivos e dívidas",
     "card4_body": "Defines até dois limites percentuais por objetivo ou dívida — por exemplo, 50% e 100%. O Meridian notifica quando um limiar é cruzado, ativado automaticamente com cada importação.",
-    "card4_tier": "Full"
+    "card4_tier": "Plus"
   },
   "full_tier": {
-    "label": "Plano Full",
+    "label": "Plano Plus",
     "title": "Mantém-te atualizado, sem esforço",
-    "sub": "O Full adiciona as funcionalidades que fazem a análise por si — e mantém a app atualizada à medida que o Meridian cresce.",
-    "item1_title": "Projeção de património líquido + taxa de poupança",
-    "item1_body": "Os teus ativos, dívidas e taxa de poupança dos últimos 6 meses — calculados a partir do histórico de importações. Vês onde estás e para onde vais sem levantar um dedo.",
+    "sub": "O Plus adiciona as funcionalidades que fazem a análise por si — e mantém a app atualizada à medida que o Meridian cresce.",
+    "item1_title": "Projeção de património líquido + plano futuro",
+    "item1_body": "Os teus ativos e dívidas ao longo do tempo, com projeção a 6 meses — calculados a partir do histórico de importações. Vês onde estás e para onde vais sem levantar um dedo. (A taxa de poupança está incluída a partir do Essential.)",
     "item2_title": "Alertas de marcos em objetivos e dívidas",
     "item2_body": "Defines os limites uma vez. O Meridian notifica-te quando os cruzas — logo que chega uma nova importação, não dias depois quando te lembras de verificar.",
     "item3_title": "Servidor MCP local",
@@ -159,12 +159,12 @@
     "coming1_title": "Sincronização bancária automática",
     "coming1_body": "Integração EnableBanking (PSD2) para bancos europeus suportados — as transações chegam automaticamente em vez de um export manual mensal. O upload XLS fica como alternativa.",
     "coming2_title": "Chat com IA local",
-    "coming2_body": "Perguntas em linguagem natural respondidas pelos teus próprios dados via Ollama — \"quanto gastei em comida no último trimestre?\" — totalmente offline, com as ferramentas MCP já incluídas no Full."
+    "coming2_body": "Perguntas em linguagem natural respondidas pelos teus próprios dados via Ollama — \"quanto gastei em comida no último trimestre?\" — totalmente offline, com as ferramentas MCP já incluídas no Plus."
   },
   "pricing": {
     "label": "Preços",
     "title": "Dois caminhos. Ambos privados.",
-    "sub": "O Base tem tudo o que precisas, uma vez, para sempre. O Full adiciona a análise mais profunda e as atualizações contínuas — para quem não quer parar para pensar nisto.",
+    "sub": "O Essential tem tudo o que precisas, uma vez, para sempre. O Plus adiciona a análise mais profunda e as atualizações contínuas — para quem não quer parar para pensar nisto.",
     "trial_badge": "Teste Gratuito",
     "trial_price": "Grátis",
     "trial_price_note": "31 dias · sem cartão de crédito",
@@ -183,12 +183,13 @@
       "Backup encriptado"
     ],
     "trial_cta": "Transferir",
-    "base_badge": "Base",
+    "base_badge": "Essential",
     "base_price_note": "Uma vez · para sempre",
     "base_features_yes": [
       "Tudo do Teste, sem limites",
       "Todos os formatos de importação (XLS, TXT)",
       "Regras de categorização automática e histórico de importações",
+      "Taxa de poupança (média de 6 meses)",
       "Deteção automática e calendários de pagamento de dívidas",
       "Acesso pelo telemóvel (LAN / Tailscale)",
       "Notificações push (tarefas, orçamentos, saúde)",
@@ -197,18 +198,18 @@
       "Lembretes de tarefas e hábitos"
     ],
     "base_features_no": [
-      "Taxa de poupança e projeção de património líquido",
+      "Projeção de património líquido + gráfico futuro",
       "Alertas de marcos",
       "Backup encriptado",
       "Integração MCP / IA"
     ],
     "base_cta": "Comprar agora",
-    "full_badge": "Full",
+    "full_badge": "Plus",
     "full_featured_label": "Mais completo",
     "full_price_note": "Subscrição anual · brevemente disponível",
     "full_features_yes": [
-      "Tudo do Base",
-      "Taxa de poupança e projeção de património líquido",
+      "Tudo do Essential",
+      "Projeção de património líquido + gráfico futuro",
       "Alertas de marcos de objetivos e dívidas",
       "Backup encriptado (.enc)",
       "Servidor MCP (integração com assistente IA)",
@@ -217,7 +218,7 @@
     ],
     "full_cta": "Comprar agora",
     "full_coming_soon": "Brevemente",
-    "footnote": "O Teste e o Base são bloqueados à versão — a licença que compras mantém-se válida para a versão instalada; não há atualizações futuras incluídas.\nOs subscritores Full recebem todas as atualizações enquanto a subscrição anual estiver ativa."
+    "footnote": "O Teste e o Essential são bloqueados à versão — a licença que compras mantém-se válida para a versão instalada; não há atualizações futuras incluídas.\nOs subscritores Plus recebem todas as atualizações enquanto a subscrição anual estiver ativa."
   },
   "download": {
     "label": "Transferência",
@@ -275,9 +276,9 @@
     "contact_lead": "Questões sobre estes termos:",
     "sections": [
       { "title": "Resumo", "body": "Estes termos regem a compra e utilização do Meridian, uma aplicação de computador para finanças pessoais, saúde, tarefas e hábitos. Ao instalares a app ou comprares uma licença, aceitas estes termos." },
-      { "title": "Licenças e planos", "body": "O Meridian oferece um teste gratuito de 31 dias, uma licença Base e uma subscrição Full. O teste e a licença Base são bloqueados à versão: mantêm-se válidos indefinidamente para a versão instalada no momento da compra, sem direito a atualizações futuras. A subscrição Full é faturada anualmente e inclui todas as atualizações de software enquanto estiver ativa. As licenças destinam-se a uso pessoal em dispositivos que possuis ou controlas e não podem ser revendidas nem redistribuídas." },
+      { "title": "Licenças e planos", "body": "O Meridian oferece um teste gratuito de 31 dias, uma licença Essential e uma subscrição Plus. O teste e a licença Essential são bloqueados à versão: mantêm-se válidos indefinidamente para a versão instalada no momento da compra, sem direito a atualizações futuras. A subscrição Plus é faturada anualmente e inclui todas as atualizações de software enquanto estiver ativa. As licenças destinam-se a uso pessoal em dispositivos que possuis ou controlas e não podem ser revendidas nem redistribuídas." },
       { "title": "Pagamentos", "body": "As compras são processadas pela Paddle.com Market Limited, na qualidade de Merchant of Record. A Paddle trata do checkout, da faturação, dos impostos aplicáveis e dos dados de pagamento, regidos pelos termos e pela política de privacidade da própria Paddle. O Meridian nunca recebe os teus dados de pagamento." },
-      { "title": "Subscrições e cancelamento", "body": "As subscrições Full renovam-se anualmente até serem canceladas. Podes cancelar a qualquer momento através do link no recibo da Paddle ou contactando o suporte. O cancelamento trava renovações futuras; a app continua a funcionar na última versão que recebeste." },
+      { "title": "Subscrições e cancelamento", "body": "As subscrições Plus renovam-se anualmente até serem canceladas. Podes cancelar a qualquer momento através do link no recibo da Paddle ou contactando o suporte. O cancelamento trava renovações futuras; a app continua a funcionar na última versão que recebeste." },
       { "title": "Reembolsos", "body": "Os reembolsos são tratados de acordo com a nossa Política de Reembolsos, disponível neste site." },
       { "title": "Utilização aceitável", "body": "Não podes partilhar, revender ou redistribuir chaves de licença, nem tentar contornar a validação de licenças. A engenharia inversa não é permitida, exceto na medida autorizada pela lei aplicável." },
       { "title": "Sem aconselhamento financeiro", "body": "O Meridian é uma ferramenta de registo e visualização. Nada na app constitui aconselhamento financeiro, de investimento, fiscal ou de saúde." },
@@ -296,7 +297,7 @@
       { "title": "Experimenta antes de comprar", "body": "O Meridian oferece um teste gratuito completo de 31 dias, sem cartão de crédito. Recomendamos que uses o teste para confirmar que a app se adequa às tuas necessidades antes de comprar." },
       { "title": "Direito de livre resolução de 14 dias", "body": "Se fores consumidor na UE, no EEE ou no Reino Unido, podes resolver a compra no prazo de 14 dias após a transação, sem indicar qualquer motivo, nos termos da legislação de consumo aplicável. Consumidores de outros países também podem pedir reembolso no prazo de 14 dias após a compra." },
       { "title": "Como pedir um reembolso", "body": "As compras são processadas pela Paddle como Merchant of Record, pelo que os reembolsos são emitidos pela Paddle. Responde ao email do recibo da Paddle, ou contacta o nosso email de suporte com o número da encomenda, e trataremos do pedido. Os reembolsos são devolvidos ao método de pagamento original, normalmente em 5 a 10 dias úteis." },
-      { "title": "Renovações de subscrição", "body": "Cancelar uma subscrição Full trava renovações futuras a qualquer momento. Se uma renovação tiver sido cobrada nos últimos 14 dias, podes pedir o reembolso dessa cobrança." }
+      { "title": "Renovações de subscrição", "body": "Cancelar uma subscrição Plus trava renovações futuras a qualquer momento. Se uma renovação tiver sido cobrada nos últimos 14 dias, podes pedir o reembolso dessa cobrança." }
     ]
   },
   "support_page": {
@@ -310,14 +311,14 @@
     "faq_title": "Perguntas frequentes",
     "faq_items": [
       { "q": "Onde é que o Meridian guarda os meus dados?", "a": "Na tua máquina, num ficheiro SQLite em %APPDATA%\\Meridian\\meridian.db no Windows, ou num volume Docker que controlas. Nada é enviado para qualquer servidor do Meridian — não existe nenhum." },
-      { "q": "O que acontece quando o período de teste termina?", "a": "A app passa para modo só de leitura — ainda consegues ver tudo, mas adicionar transações, editar categorias e fazer alterações requer uma licença Base ou Full. Nada é apagado." },
+      { "q": "O que acontece quando o período de teste termina?", "a": "A app passa para modo só de leitura — ainda consegues ver tudo, mas adicionar transações, editar categorias e fazer alterações requer uma licença Essential ou Plus. Nada é apagado." },
       { "q": "Como ativo a minha licença?", "a": "Após a compra, recebes uma chave de licença por email. Abre o Meridian, vai a Definições → Licença, cola a chave e clica em Ativar. A app liga-se uma vez ao nosso servidor de ativação para associar a chave à tua máquina, depois funciona offline a partir daí." },
-      { "q": "Posso aceder ao Meridian no telemóvel?", "a": "Sim, no Base e Full. Vai a Definições → Acesso por Telemóvel, gera um certificado HTTPS local, e consegues aceder à app por qualquer browser na tua rede doméstica — ou em qualquer lado via Tailscale." },
+      { "q": "Posso aceder ao Meridian no telemóvel?", "a": "Sim, no Essential e Plus. Vai a Definições → Acesso por Telemóvel, gera um certificado HTTPS local, e consegues aceder à app por qualquer browser na tua rede doméstica — ou em qualquer lado via Tailscale." },
       { "q": "Perdi a chave de licença. Consigo recuperá-la?", "a": "A chave foi enviada para o email que indicaste na Paddle no momento da compra. Procura um email da Meridian ou da Paddle com o assunto 'A tua licença Meridian'. Se não encontrares, envia-nos um email com o número da encomenda." },
       { "q": "Como importo o meu extrato bancário?", "a": "Vai ao separador Carregar, arrasta o ficheiro CSV ou XLS, define o mapeamento de colunas uma vez, e o Meridian trata do resto — categorias, deduplicação, controlo de saldo. Os formatos CGD, Millennium, Santander, Montepio e Activo Bank funcionam sem qualquer configuração extra." },
       { "q": "O Meridian funciona no Mac ou Linux?", "a": "A app Electron é apenas para Windows de momento. Se usas Linux, a imagem Docker funciona em qualquer máquina com Docker instalado — mesma app, mesmas funcionalidades, acedida pelo browser." },
-      { "q": "Qual é a diferença entre Base e Full?", "a": "O Base custa €39 uma vez — sem subscrição, teu para sempre. O Full custa €59/ano e adiciona projeções de património líquido, monitorização da taxa de poupança, alertas de marcos, backups encriptados e integrações de sincronização bancária. Se tens dúvidas, o Base cobre a grande maioria do uso diário." },
-      { "q": "Como cancelo a minha subscrição Full?", "a": "Usa o link de cancelamento no email de recibo da Paddle, ou contacta-nos com o número da encomenda e tratamos disso. Após o cancelamento, a tua subscrição continua até ao fim do período atual, e depois a app passa a funcionar com as funcionalidades Base." },
+      { "q": "Qual é a diferença entre Essential e Plus?", "a": "O Essential custa €39 uma vez — sem subscrição, teu para sempre. O Plus custa €59/ano e adiciona projeção de património líquido, alertas de marcos, backups encriptados e integrações de sincronização bancária. Se tens dúvidas, o Essential cobre a grande maioria do uso diário — incluindo a taxa de poupança." },
+      { "q": "Como cancelo a minha subscrição Plus?", "a": "Usa o link de cancelamento no email de recibo da Paddle, ou contacta-nos com o número da encomenda e tratamos disso. Após o cancelamento, a tua subscrição continua até ao fim do período atual, e depois a app passa a funcionar com as funcionalidades Essential." },
       { "q": "As minhas transações não estão a ser categorizadas automaticamente.", "a": "A categorização automática funciona com regras que tu crias — o Meridian não inclui regras predefinidas porque as descrições bancárias variam muito entre bancos e contas. Vai a Carregar → Regras, adiciona algumas regras por palavras-chave para os teus comerciantes habituais, e elas aplicam-se imediatamente a todas as transações correspondentes." }
     ],
     "contact_title": "Envia-nos uma mensagem",

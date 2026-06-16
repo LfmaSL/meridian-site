@@ -1,19 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <rect x="0" y="0" width="512" height="512" rx="128" fill="#111827"/>
-  <rect x="0" y="0" width="512" height="512" rx="128" fill="none"
-        stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.04"/>
   <line x1="256" y1="100" x2="256" y2="412"
         stroke="#FFFFFF" stroke-width="4" stroke-opacity="0.3"
         stroke-dasharray="1 20" stroke-linecap="round"/>
-  <g transform="translate(0, 20)">
+  <g transform="translate(2, -25)">
     <path d="M 120,380 L 200,240 L 256,310"
           fill="none" stroke="#3B82F6" stroke-width="36"
-          stroke-linecap="round" stroke-linejoin="round"/>
+          stroke-linecap="round" stroke-linejoin="round"
+          stroke-opacity="0.7"/>
     <path d="M 256,310 L 312,180 L 392,380"
           fill="none" stroke="#10B981" stroke-width="36"
-          stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="312" cy="180" r="14" fill="#10B981"/>
-    <circle cx="256" cy="310" r="12" fill="#F59E0B"/>
-    <circle cx="256" cy="310" r="4" fill="#111827"/>
+          stroke-linecap="round" stroke-linejoin="round"
+          stroke-opacity="0.7"/>
   </g>
 </svg>

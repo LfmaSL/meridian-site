@@ -3,9 +3,12 @@
 
 /* ── Tokens ──────────────────────────────────────────────────────────────── */
 :root {
-  --accent:       #14b8a6;
-  --accent-dark:  #0d9488;
-  --accent-dim:   rgba(20,184,166,.1);
+  --accent:       #3b82f6;
+  --accent-dark:  #2563eb;
+  --accent-dim:   rgba(59,130,246,.1);
+  --health:       #10b981;
+  --health-dark:  #059669;
+  --health-dim:   rgba(16,185,129,.1);
 
   /* Dark theme (default) */
   --bg:           #0f172a;
@@ -20,9 +23,9 @@
 }
 
 [data-theme="light"] {
-  --bg:           #f8fafc;
+  --bg:           #f1f5f9;
   --surface:      #ffffff;
-  --surface2:     #f1f5f9;
+  --surface2:     #e2e8f0;
   --border:       #e2e8f0;
   --text:         #0f172a;
   --muted:        #475569;
@@ -231,6 +234,7 @@ section { padding: 5.5rem 2rem; }
   color: var(--accent);
   margin-bottom: .75rem;
 }
+.section-label--health { color: var(--health); }
 .section-title {
   font-size: clamp(1.6rem, 3vw, 2.1rem);
   font-weight: 700;
@@ -302,6 +306,9 @@ section { padding: 5.5rem 2rem; }
 }
 .row-label:first-of-type { margin-top: 0; }
 .tier-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-size: .7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -310,6 +317,13 @@ section { padding: 5.5rem 2rem; }
   border: 1px solid var(--accent);
   padding: .15rem .55rem;
   border-radius: 999px;
+}
+.feature-tier img, .ac-tier img, .tier-inline img {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 /* ── Feature cards ───────────────────────────────────────────────────────── */
@@ -337,8 +351,10 @@ section { padding: 5.5rem 2rem; }
   color: var(--subtle);
   align-self: flex-start;
 }
-.feature-tier.full { border-color: var(--accent); color: var(--accent); }
-.feature-tier.base { border-color: var(--muted);  color: var(--muted); }
+.feature-tier.plus     { border-color: var(--accent); color: var(--accent); }
+.feature-tier.essential { border-color: var(--muted);  color: var(--muted); }
+.feature-tier.full     { border-color: var(--accent); color: var(--accent); }
+.feature-tier.base     { border-color: var(--muted);  color: var(--muted); }
 
 /* ── Automations ─────────────────────────────────────────────────────────── */
 .auto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
@@ -364,6 +380,7 @@ section { padding: 5.5rem 2rem; }
   border: 1px solid var(--border);
   color: var(--subtle);
 }
+.auto-card .ac-tier.plus { border-color: var(--accent); color: var(--accent); }
 .auto-card .ac-tier.full { border-color: var(--accent); color: var(--accent); }
 
 /* ── Full-tier spotlight ─────────────────────────────────────────────────── */
