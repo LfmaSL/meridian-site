@@ -1,20 +1,24 @@
 <%- include('../partials/head', { title: c.meta.title, locale, c, cfg, supported, page: '' }) %>
 <%- include('../partials/nav',  { locale, c, cfg, supported, page: '' }) %>
 
+<main>
 <!-- Hero -->
 <div class="hero">
-  <div class="hero-eyebrow">
-    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-    </svg>
-    <%= c.hero.eyebrow %>
+  <div class="hero-text">
+    <div class="hero-eyebrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+      </svg>
+      <%= c.hero.eyebrow %>
+    </div>
+    <h1><%= c.hero.h1_line1 %><br><span><%= c.hero.h1_line2 %></span></h1>
+    <p><%= c.hero.subhead %></p>
+    <div class="hero-actions">
+      <a href="#download" class="btn btn-primary"><%= c.hero.cta_primary %></a>
+      <a href="#pricing"  class="btn btn-outline"><%= c.hero.cta_secondary %></a>
+    </div>
   </div>
-  <h1><%= c.hero.h1_line1 %><br><span><%= c.hero.h1_line2 %></span></h1>
-  <p><%= c.hero.subhead %></p>
-  <div class="hero-actions">
-    <a href="#pricing" class="btn btn-primary"><%= c.hero.cta_primary %></a>
-    <a href="#pricing"  class="btn btn-outline"><%= c.hero.cta_secondary %></a>
-  </div>
+  <object type="image/svg+xml" data="/hero-chart.svg" class="hero-chart" aria-hidden="true" tabindex="-1"></object>
 </div>
 
 <!-- Trust bar -->
@@ -94,15 +98,11 @@
         <h3><%= c.import_sec.card3_title %></h3><p><%= c.import_sec.card3_body %></p>
       </div>
     </div>
-    <p class="import-note">
-      <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-      <%= c.import_sec.note %>
-    </p>
   </div>
 </section>
 
 <!-- Privacy section -->
-<section id="privacy" style="background: var(--surface);">
+<section id="privacy" class="section--surface">
   <div class="section-inner">
     <p class="section-label"><%= c.privacy_sec.label %></p>
     <h2 class="section-title"><%= c.privacy_sec.title %></h2>
@@ -144,7 +144,7 @@
       <div class="feature-card"><div class="card-icon-sm"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg></div><h3><%= c.finance.card3_title %></h3><p><%= c.finance.card3_body %></p><span class="feature-tier"><%= c.finance.card3_tier %></span></div>
       <div class="feature-card"><div class="card-icon-sm"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg></div><h3><%= c.finance.card4_title %></h3><p><%= c.finance.card4_body %></p><span class="feature-tier"><%= c.finance.card4_tier %></span></div>
     </div>
-    <div class="row-label"><%= c.finance.row2_label %> <span class="tier-inline"><img src="/icons/tier-plus.svg" alt="">Plus</span></div>
+    <div class="row-label"><%= c.finance.row2_label %></div>
     <div class="features-grid">
       <div class="feature-card"><div class="card-icon-sm"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg></div><h3><%= c.finance.card5_title %></h3><p><%= c.finance.card5_body %></p><span class="feature-tier plus"><img src="/icons/tier-plus.svg" alt=""><%= c.finance.card5_tier %></span></div>
       <div class="feature-card"><div class="card-icon-sm"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg></div><h3><%= c.finance.card6_title %></h3><p><%= c.finance.card6_body %></p><span class="feature-tier plus"><img src="/icons/tier-plus.svg" alt=""><%= c.finance.card6_tier %></span></div>
@@ -155,7 +155,7 @@
 </section>
 
 <!-- Health -->
-<section id="health" style="background: var(--surface);">
+<section id="health" class="section--surface">
   <div class="section-inner">
     <p class="section-label section-label--health"><%= c.health.label %></p>
     <h2 class="section-title"><%= c.health.title %></h2>
@@ -185,7 +185,7 @@
 </section>
 
 <!-- Full tier spotlight -->
-<section id="full" style="background: var(--surface);">
+<section id="full" class="section--surface">
   <div class="section-inner">
     <p class="section-label"><%= c.full_tier.label %></p>
     <h2 class="section-title"><%= c.full_tier.title %></h2>
@@ -201,11 +201,31 @@
         <div>
           <p class="coming-section-label"><%= c.full_tier.coming_label %></p>
           <div class="coming-grid">
-            <div class="coming-item"><div class="coming-header"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><h3><%= c.full_tier.coming1_title %></h3><span class="badge-soon"><%= locale === 'pt' ? 'Em breve' : 'Coming soon' %></span></div><p><%= c.full_tier.coming1_body %></p></div>
-            <div class="coming-item"><div class="coming-header"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><h3><%= c.full_tier.coming2_title %></h3><span class="badge-soon"><%= locale === 'pt' ? 'Em breve' : 'Coming soon' %></span></div><p><%= c.full_tier.coming2_body %></p></div>
+            <div class="coming-item"><div class="coming-header"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><h3><%= c.full_tier.coming1_title %></h3><span class="badge-soon"><%= c.full_tier.badge_soon %></span></div><p><%= c.full_tier.coming1_body %></p></div>
+            <div class="coming-item"><div class="coming-header"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><h3><%= c.full_tier.coming2_title %></h3><span class="badge-soon"><%= c.full_tier.badge_soon %></span></div><p><%= c.full_tier.coming2_body %></p></div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Download -->
+<section id="download" class="section--surface">
+  <div class="section-inner">
+    <p class="section-label"><%= c.download.label %></p>
+    <h2 class="section-title"><%= c.download.title %></h2>
+    <p class="section-sub"><%= c.download.sub %></p>
+    <div class="download-grid">
+      <a href="<%= cfg.download_url %>" class="download-card">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/>
+        </svg>
+        <div>
+          <div class="dl-label"><%= c.download.windows_label %></div>
+          <div class="dl-name"><%= c.download.windows_name %></div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -227,7 +247,7 @@
           <% c.pricing.trial_features_yes.forEach(function(f) { %><li class="yes"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><%= f %></li><% }); %>
           <% c.pricing.trial_features_no.forEach(function(f)  { %><li class="no"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg><%= f %></li><% }); %>
         </ul>
-        <a href="<%= cfg.download_url %>" class="btn btn-outline" style="width:100%;text-align:center;"><%= c.pricing.trial_cta %></a>
+        <a href="<%= cfg.download_url %>" class="btn btn-outline btn-block"><%= c.pricing.trial_cta %></a>
       </div>
 
       <!-- Base -->
@@ -239,18 +259,18 @@
           <% c.pricing.base_features_yes.forEach(function(f) { %><li class="yes"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><%= f %></li><% }); %>
           <% c.pricing.base_features_no.forEach(function(f)  { %><li class="no"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg><%= f %></li><% }); %>
         </ul>
-        <a href="<%= cfg.base_buy_url %>" class="btn btn-outline" style="width:100%;text-align:center;"><%= c.pricing.base_cta %> — <%= cfg.base_price %></a>
+        <a href="<%= cfg.base_buy_url %>" class="btn btn-outline btn-block"><%= c.pricing.base_cta %> — <%= cfg.base_price %></a>
       </div>
 
       <!-- Full -->
       <div class="pricing-card featured">
         <div class="badge-featured"><%= c.pricing.full_featured_label %></div>
         <p class="tier accent"><%= c.pricing.full_badge %></p>
-        <p class="price-note" style="margin-bottom:1.5rem;"><%= c.pricing.full_price_note %></p>
+        <p class="price-note price-note--gap"><%= c.pricing.full_price_note %></p>
         <ul>
           <% c.pricing.full_features_yes.forEach(function(f) { %><li class="yes"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><%= f %></li><% }); %>
         </ul>
-        <span class="btn btn-outline" style="width:100%;text-align:center;opacity:.5;cursor:default;"><%= c.pricing.full_coming_soon %></span>
+        <span class="btn btn-outline btn-block btn-disabled"><%= c.pricing.full_coming_soon %></span>
       </div>
 
     </div>
@@ -262,4 +282,5 @@
   </div>
 </section>
 
+</main>
 <%- include('../partials/footer', { locale, c, cfg, supported, page: '' }) %>

@@ -1,20 +1,21 @@
 {
   "meta": {
-    "title": "Meridian — Finanças, saúde e hábitos nos teus termos",
+    "title": "Meridian: Finanças, saúde e hábitos nos teus termos",
     "description": "O Meridian é um organizador pessoal local-first para finanças, saúde, tarefas e hábitos. Importa extratos bancários, automatiza as partes repetitivas e corre inteiramente na tua máquina."
   },
   "nav": {
     "why": "Porquê o Meridian",
-    "import": "Importar",
+    "import": "Importações",
     "features": "Funcionalidades",
     "pricing": "Preços",
-    "download": "Transferir"
+    "download": "Transferir",
+    "support": "Suporte"
   },
   "hero": {
     "eyebrow": "Local-first · Sem contas · Sem cloud",
     "h1_line1": "Finanças, saúde e hábitos.",
     "h1_line2": "Privados, automatizados, teus.",
-    "subhead": "Importas o extrato do banco, o Meridian trata do resto — categorias, orçamentos, objetivos, saúde, hábitos. Tudo na tua máquina. Sem contas, sem cloud, sem dados entregues a ninguém.",
+    "subhead": "Importas o extrato do banco, o Meridian trata do resto. Categorias, orçamentos, objetivos, saúde, hábitos. Tudo na tua máquina. Sem contas, sem cloud, sem dados entregues a ninguém.",
     "cta_primary": "Iniciar teste gratuito",
     "cta_secondary": "Ver preços"
   },
@@ -22,34 +23,33 @@
     "local_db": "Dados em <strong>SQLite local</strong>",
     "no_accounts": "<strong>Sem contas</strong> para criar",
     "no_cloud": "<strong>Sem sincronização</strong> cloud",
-    "backup": "Backup <strong>encriptado</strong> do lado do cliente",
-    "export": "<strong>Dados abertos</strong> — exporta a qualquer momento",
-    "phone": "Computador <strong>+ telemóvel</strong> na tua rede"
+    "backup": "<strong>Backup encriptado</strong>: Plus",
+    "export": "<strong>Dados abertos</strong>: exporta a qualquer momento",
+    "phone": "<strong>Acesso por telemóvel</strong>: Essential e Plus"
   },
   "story": {
     "label": "O Meridian, porquê?",
     "title": "Começou num fim de semana. Ficou.",
     "p1": "Tinha folhas de cálculo a mais. Uma para o orçamento, outra para as dívidas, outra para o resto. Todo o mês era a mesma coisa: exportar o extrato do banco, colar colunas, torcer para não ter partido nada. Num fim de semana escrevi um script para fazer isso por mim.",
-    "p2": "Depois quis ver os gastos em gráfico. Depois categorias automáticas. A seguir o património líquido e projeções. Depois calendários de dívidas, tarefas, lembretes. Por fim métricas de saúde e hábitos — já que estava tudo ali, fazia sentido ter o contexto completo num sítio só.",
+    "p2": "Depois quis ver os gastos em gráfico. Depois categorias automáticas. A seguir o património líquido e projeções. Depois calendários de dívidas, tarefas, lembretes. Por fim métricas de saúde e hábitos... Já que estava tudo ali, fazia sentido ter o contexto completo num sítio só.",
     "p3": "Nunca planeei fazer uma app. Foi crescendo ao fim de semana, versão a versão. Os dados continuam na minha máquina, a importação mensal continua a ser um clique, e já não há folhas de cálculo nenhumas.",
     "card1_title": "As tuas transações, o teu servidor",
-    "card1_body": "As apps de finanças leem e processam os teus dados na cloud. O Meridian importa os ficheiros do banco diretamente — nada é transmitido, nada analisado remotamente. Os teus dados ficam na tua máquina.",
+    "card1_body": "As apps de finanças leem e processam os teus dados na cloud. O Meridian importa os ficheiros do banco diretamente - nada é transmitido, nada analisado remotamente. Os teus dados ficam na tua máquina.",
     "card2_title": "Automação sem manutenção",
-    "card2_body": "As folhas de cálculo funcionam até quebrar — e quando quebram, não avisam. No Meridian defines as regras uma vez; a categorização, os pagamentos de dívidas e as tarefas recorrentes correm sozinhos em cada importação.",
+    "card2_body": "As folhas de cálculo funcionam até partir e quando acontece, pode não avisar. No Meridian defines as regras uma vez; a categorização, os pagamentos de dívidas e as tarefas recorrentes correm sozinhos em cada importação.",
     "card3_title": "Uma app para a imagem completa",
     "card3_body": "Finanças, saúde, hábitos e tarefas na mesma base de dados local. Os objetivos ligam-se aos saldos das contas. Os lembretes de saúde e as datas de vencimento ficam no mesmo sítio. O contexto não se perde entre cinco apps diferentes."
   },
   "import_sec": {
     "label": "Importação",
     "title": "Compatível com o ficheiro do teu banco",
-    "sub": "Arrasta um export do banco. O Meridian lê as colunas, mapeia-as para os campos certos e lembra-se do formato para a próxima vez — as importações seguintes precisam de um clique.",
+    "sub": "Arrasta um export do banco. O Meridian lê as colunas, mapeia-as para os campos certos e lembra-se do formato para a próxima vez; as importações seguintes precisam de um clique.",
     "card1_title": "XLS e XLSX",
     "card1_body": "Qualquer export de folha de cálculo de qualquer banco. Um mapeador de colunas deixa-te atribuir data, descrição, montante e saldo a partir da linha de cabeçalho. Suporte a ficheiros com múltiplos separadores — o Meridian escolhe o certo.",
     "card2_title": "Importações sem duplicados",
     "card2_body": "Cada importação verifica cada transação contra o que já tens — por data, descrição e montante. Reenviar o mesmo ficheiro ou importar intervalos de datas sobrepostos é sempre seguro. O resumo da importação diz-te exatamente o que foi adicionado e o que foi ignorado.",
     "card3_title": "Exports em texto",
-    "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido a partir do histórico de transações — sem ajuste manual de datas.",
-    "note": "A deteção de duplicados corre em cada importação — podes reenviar o mesmo ficheiro sem risco. A contagem de importados e duplicados ignorados aparece no final de cada execução."
+    "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido a partir do histórico de transações — sem ajuste manual de datas."
   },
   "privacy_sec": {
     "label": "Privacidade",
@@ -155,6 +155,7 @@
     "item3_body": "Consultas os teus dados financeiros e de saúde a partir do Claude, Cursor ou qualquer assistente compatível com MCP. Só de leitura, protegido por palavra-passe, totalmente local.",
     "item4_title": "Atualizações de software incluídas",
     "item4_body": "Cada novo lançamento do Meridian chega automaticamente enquanto a subscrição está ativa. A app melhora sem fazeres nada.",
+    "badge_soon": "Em breve",
     "coming_label": "No roadmap",
     "coming1_title": "Sincronização bancária automática",
     "coming1_body": "Integração EnableBanking (PSD2) para bancos europeus suportados — as transações chegam automaticamente em vez de um export manual mensal. O upload XLS fica como alternativa.",
@@ -331,7 +332,7 @@
     "field_message_placeholder": "Descreve a tua dúvida ou problema…",
     "submit": "Enviar mensagem",
     "sent_title": "Mensagem enviada",
-    "sent_body": "Obrigado — respondemos em até 1 dia útil.",
+    "sent_body": "Obrigado! respondemos em até 1 dia útil.",
     "error_title": "Não foi possível enviar a mensagem",
     "error_body": "Ocorreu um erro. Envia-nos um email diretamente para"
   }

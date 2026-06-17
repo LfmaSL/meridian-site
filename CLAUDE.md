@@ -22,10 +22,11 @@ dev:   node --watch server.js
     site.js          — all public pages + /sitemap.xml
   views/
     partials/        — head.ejs (SEO meta), nav.ejs, footer.ejs
-    pages/           — index.ejs, privacy.ejs, terms.ejs, refunds.ejs, 404.ejs
+    pages/           — index.ejs, privacy.ejs, terms.ejs, refunds.ejs, support.ejs, 404.ejs
   public/
     css/style.css    — centralized, dark/light themes via CSS custom properties
     js/theme.js      — theme toggle + mobile nav toggle
+    hero-chart.svg   — animated SMIL SVG (line-draw + glow); embed via <object>, not <img>
     favicon.svg · robots.txt
 
   content-editing: edit locales/*.json or config.js, commit, redeploy
@@ -56,8 +57,8 @@ dev:   node --watch server.js
 
   CSS custom properties in style.css:
     dark (default): --bg #0f172a, --surface #1e293b, --text #e2e8f0
-    light:          --bg #f8fafc, --surface #ffffff, --text #0f172a
-    accent:         #14b8a6 (same both themes)
+    light:          --bg #f1f5f9, --surface #ffffff, --text #0f172a
+    accent:         #3b82f6 (blue, same both themes)
   Toggle: data-theme attribute on <html>, stored in localStorage
   No-flash: inline script in <head> reads localStorage before CSS renders
 
@@ -124,11 +125,11 @@ dev:   node --watch server.js
   pricing source of truth:     C:/Dev/meridian/docs/product/product-plan.md
 
   key facts for pricing cards:
-    Trial:  31 days, free, read-only after expiry; caps: 2 accounts, 3 imports, 10 categories,
-            5 habits, 5 metrics; no auto-categorisation, no phone access, no push, no encrypted backup
-    Base:   €39 one-time, version-locked; everything unlimited + phone access (LAN/Tailscale),
-            push notifications, health trends, backup import, debt schedules, task reminders
-            NO encrypted backup (Full-only)
-    Full:   €59/year, updates while active; Base + savings rate, net worth projection,
-            milestone alerts, encrypted backup, admin panel, MCP server, bank sync (Edenred),
-            EnableBanking (coming soon)
+    Trial:     31 days, free, read-only after expiry; caps: 2 accounts, 3 imports, 10 categories,
+               5 habits, 5 metrics; no auto-categorisation, no phone access, no push, no encrypted backup
+    Essential: €39 one-time, version-locked; everything unlimited + phone access (LAN/Tailscale),
+               push notifications, health trends, backup import, debt schedules, task reminders
+               NO encrypted backup (Plus-only)
+    Plus:      €59/year, updates while active; Essential + savings rate, net worth projection,
+               milestone alerts, encrypted backup, admin panel, MCP server, bank sync (Edenred),
+               EnableBanking (coming soon)

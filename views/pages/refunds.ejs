@@ -1,6 +1,7 @@
 <%- include('../partials/head', { title: c.refunds_page.title, locale, c, cfg, supported, page: 'refunds' }) %>
 <%- include('../partials/nav',  { locale, c, cfg, supported, page: 'refunds' }) %>
 
+<main>
 <div class="privacy-wrap" style="margin: 2rem auto;">
   <a class="back" href="/<%= locale %>/"><%- c.refunds_page.back_link %></a>
   <h1><%= c.refunds_page.h1 %></h1>
@@ -15,4 +16,5 @@
   <p><%= c.refunds_page.contact_lead %> <a href="mailto:<%= cfg.support_email %>"><%= cfg.support_email %></a></p>
 </div>
 
+</main>
 <%- include('../partials/footer', { locale, c, cfg, supported, page: 'refunds' }) %>

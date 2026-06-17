@@ -8,7 +8,8 @@
     "import": "Import",
     "features": "Features",
     "pricing": "Pricing",
-    "download": "Download"
+    "download": "Download",
+    "support": "Support"
   },
   "hero": {
     "eyebrow": "Local-first · No accounts · No cloud",
@@ -22,9 +23,9 @@
     "local_db": "Data in <strong>local SQLite</strong>",
     "no_accounts": "<strong>No accounts</strong> to create",
     "no_cloud": "<strong>No cloud sync</strong> ever",
-    "backup": "<strong>Client-side</strong> encrypted backup",
+    "backup": "<strong>Encrypted backup</strong> (Plus)",
     "export": "<strong>Open data</strong> — export any time",
-    "phone": "Desktop <strong>+ phone</strong> on your LAN"
+    "phone": "<strong>Phone access</strong> — Essential & Plus"
   },
   "story": {
     "label": "Why Meridian exists",
@@ -48,8 +49,7 @@
     "card2_title": "Duplicate-safe imports",
     "card2_body": "Every import checks each transaction against what you already have — using date, description, and amount. Re-uploading the same file or importing overlapping date ranges is always safe. The import summary tells you exactly what was added and what was skipped.",
     "card3_title": "Plain-text exports",
-    "card3_body": "Fixed-width TXT files from online banking portals. The year is inferred automatically from your existing transaction history — no manual date adjustment needed.",
-    "note": "Duplicate detection runs on every import — re-uploading the same file is always safe. Imported count and skipped duplicates are shown after each run."
+    "card3_body": "Fixed-width TXT files from online banking portals. The year is inferred automatically from your existing transaction history — no manual date adjustment needed."
   },
   "privacy_sec": {
     "label": "Privacy",
@@ -143,6 +143,7 @@
     "item3_body": "Query your financial and health data from Claude, Cursor, or any MCP-compatible AI assistant. Read-only, password-protected, entirely local — your data is the context, nothing is sent to a third party.",
     "item4_title": "Software updates included",
     "item4_body": "Every new Meridian release is delivered automatically while your subscription is active. The app gets better without you doing anything.",
+    "badge_soon": "Coming soon",
     "coming_label": "On the roadmap",
     "coming1_title": "Automated bank sync",
     "coming1_body": "EnableBanking (PSD2) integration for supported EU banks — transactions arrive automatically instead of a monthly manual export. XLS upload stays as fallback.",
