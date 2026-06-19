@@ -1,4 +1,4 @@
-const SUPPORTED = ['en', 'pt'];
+const SUPPORTED = ['pt', 'en'];
 const DEFAULT   = 'pt';
 
 function detectLocale(req) {

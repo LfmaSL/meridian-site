@@ -8,7 +8,6 @@
     "import": "Import",
     "features": "Features",
     "pricing": "Pricing",
-    "download": "Download",
     "support": "Support"
   },
   "hero": {
@@ -17,7 +16,8 @@
     "h1_line2": "Private, automated, yours.",
     "subhead": "Import your bank statement, Meridian handles the rest: categories, budgets, goals, health, habits. Everything on your machine. No accounts, no cloud, no data handed to anyone.",
     "cta_primary": "Start free trial",
-    "cta_secondary": "See pricing"
+    "cta_secondary": "See pricing",
+    "screenshot_alt": "Meridian's home dashboard, showing habits, tasks, budget status, and today's health log together"
   },
   "trust": {
     "local_db": "Data in <strong>local SQLite</strong>",
@@ -25,7 +25,8 @@
     "no_cloud": "<strong>No cloud sync</strong> ever",
     "backup": "<strong>Encrypted backup</strong> (Plus)",
     "export": "<strong>Open data</strong>: export any time",
-    "phone": "<strong>Phone access</strong>: Essential & Plus"
+    "phone": "<strong>Phone access</strong>: Essential & Plus",
+    "mask": "<strong>Privacy toggle</strong>: blur every amount instantly"
   },
   "story": {
     "label": "Why Meridian exists",
@@ -33,6 +34,7 @@
     "p1": "Too many spreadsheets. One for the budget, one for the debts, one for everything else. Every month: export the bank statement, paste the columns, hope nothing had broken. One weekend I wrote a script to do the import for me.",
     "p2": "Then I wanted to see the spending as a chart. Then auto-categories. Then net worth and projections. Then debt schedules, tasks, reminders. Then health metrics and habits. It was all there already, and it made sense to have the full picture in one place.",
     "p3": "I never planned to build an app. It grew on weekends, one version at a time. The data is still on my machine, the monthly import is still one click, and there are no spreadsheets left.",
+    "screenshot_alt": "Meridian's home dashboard, showing habits, tasks, budget status, and today's health log together",
     "card1_title": "Your transactions, your server",
     "card1_body": "Most finance apps read and process your data in the cloud. Meridian imports your bank files directly. Nothing is transmitted, nothing is analysed remotely. Your data never leaves your machine.",
     "card2_title": "Automation without maintenance",
@@ -49,7 +51,8 @@
     "card2_title": "Duplicate-safe imports",
     "card2_body": "Every import checks each transaction against what you already have: date, description, and amount. Re-uploading the same file or importing overlapping date ranges is always safe. The import summary tells you exactly what was added and what was skipped.",
     "card3_title": "Plain-text exports",
-    "card3_body": "Fixed-width TXT files from online banking portals. The year is inferred automatically from your existing transaction history. No manual date adjustment needed."
+    "card3_body": "Fixed-width TXT files from online banking portals. The year is inferred automatically from your existing transaction history. No manual date adjustment needed.",
+    "preview_alt": "Import preview showing auto-categorized transactions, duplicate detection, and income/expense totals"
   },
   "privacy_sec": {
     "label": "Privacy",
@@ -58,13 +61,13 @@
     "tagline": "Optional anonymous install ping. No personal data, opt-in only.",
     "card1_title": "Your data stays local",
     "card1_body": "Everything lives in a SQLite file on your own machine. Transactions, health metrics, habits, tasks: none of it touches an external server.",
-    "card1_items": ["SQLite on your device", "No sync, no cloud backup", "AES-GCM encrypted backup (client-side, your password only)"],
+    "card1_items": ["SQLite on your device", "AES-GCM encrypted backup (client-side, your password only)"],
     "card2_title": "No accounts, ever",
     "card2_body": "There is no Meridian account. No email sign-up, no session on our servers. You log in with WebAuthn passkeys on your own device. Credentials stay on-device.",
-    "card2_items": ["WebAuthn (passkey) authentication", "Credentials stored on-device only", "No email required to use the app"],
+    "card2_items": ["WebAuthn (passkey) authentication", "No email required to use the app"],
     "card3_title": "You own everything",
     "card3_body": "Export your entire dataset as JSON any time. Move to a new machine, audit it, back it up. Meridian never holds your data hostage.",
-    "card3_items": ["Full JSON export (all tiers)", "JSON import / restore (Essential & Plus)", "No vendor lock-in"]
+    "card3_items": ["Full JSON export (all tiers)", "JSON import / restore (Essential & Plus)"]
   },
   "finance": {
     "label": "Finance",
@@ -82,7 +85,7 @@
     "card3_body": "Expenses appearing in 3 or more of the last 6 months with consistent amounts are flagged automatically (subscriptions, utilities, standing orders) without any manual tagging.",
     "card3_tier": "All tiers",
     "card4_title": "Multiple bank accounts",
-    "card4_body": "Import from any number of accounts. Overview and planning views filter per-account or show everything combined. Net worth includes all account balances automatically.",
+    "card4_body": "Import from any number of accounts. Overview and planning views filter per-account or show everything combined. Net worth includes all account balances automatically. Pick your display currency (EUR, USD, GBP, CHF) once in your profile.",
     "card4_tier": "All tiers",
     "card5_title": "Net worth projection",
     "card5_body": "Assets versus debts over time, plotted as an area chart. Built from your import history, updated automatically each time new transactions come in, with no manual input.",
@@ -90,12 +93,28 @@
     "card6_title": "Savings rate",
     "card6_body": "Six-month rolling average, calculated automatically from your income and expense history. No formula to maintain: it updates on every import and shows you the trend over time.",
     "card6_tier": "Essential & Plus",
-    "card7_title": "Goal & debt milestones",
-    "card7_body": "Set percentage thresholds on any goal or debt. Meridian fires a push notification the moment you cross 50% or hit 100%, triggered automatically as new transactions are imported.",
+    "card7_title": "Goal & debt planning",
+    "card7_body": "Run what-if scenarios before committing: a different monthly contribution, a lump sum today, or a target date. See the projected payoff or completion date update instantly. Set percentage milestones on any goal or debt and get notified the moment you cross one.",
     "card7_tier": "Plus",
     "card8_title": "Debt amortisation schedules",
     "card8_body": "Standard amortisation for mortgages and loans: full payment schedule with principal/interest split, extra payment logging, and a keyword that auto-detects payments on import and keeps the balance current.",
-    "card8_tier": "Essential & Plus"
+    "card8_tier": "Essential & Plus",
+    "monthly_alt": "Monthly view: year-over-year comparison, category breakdown donut, and 12-month income/expense bar chart",
+    "monthly_caption": "Year-over-year comparison, category breakdown, and monthly trends (all tiers)",
+    "net_worth_caption": "Net worth projection: 6 months actual, 6 months forward (Plus)",
+    "debt_caption": "Full amortisation schedule, principal/interest split, and milestone alerts (Essential & Plus)",
+    "card10_title": "Category drill-down",
+    "card10_body": "Click any category to see its spending trend across months and a breakdown by merchant. Spot what's actually driving an over-budget category without exporting anything.",
+    "card10_tier": "All tiers",
+    "simulate_caption": "What-if simulator: a different monthly contribution or lump sum, projected instantly (Plus)",
+    "drilldown_caption": "Category drill-down: spending trend and merchant breakdown for any category (all tiers)",
+    "tab_net_worth": "Net worth projection",
+    "tab_debt": "Amortization",
+    "tab_simulate": "Simulator",
+    "tab_drilldown": "Category detail",
+    "tab_recurring": "Recurring spending",
+    "recurring_caption": "Subscriptions and recurring bills detected automatically, with monthly averages (Essential & Plus)",
+    "also_included": "Also included: monthly budgets, year-over-year comparison, and multiple bank accounts (all tiers), plus savings rate (Essential & Plus)."
   },
   "health": {
     "label": "Health & habits",
@@ -112,12 +131,40 @@
     "card3_tier": "All tiers",
     "card4_title": "Phone access",
     "card4_body": "Install as a PWA on your phone and reach Meridian from any device on your local network, or over Tailscale from anywhere. No port forwarding, no cloud relay, no exposure.",
-    "card4_tier": "Essential & Plus"
+    "card4_tier": "Essential & Plus",
+    "tab_today": "Today",
+    "tab_history": "History",
+    "tab_trends": "Trends",
+    "today_alt": "Today's health metrics with goal gaps shown, next to a habits column with streaks and a medication entry",
+    "today_caption": "Today's metrics and habits, logged in seconds (all tiers)",
+    "history_alt": "30-day history table of health metrics and habit completion",
+    "history_caption": "30/90-day history table for every metric and habit (all tiers)",
+    "trends_alt": "Health trend charts for weight, sleep, mood, water, and steps over 30 days, with habit streak grids",
+    "trends_caption": "30/90-day trend charts for every metric, plus habit streaks (Essential & Plus)",
+    "also_included": "Also included: phone access via PWA, on your local network or over Tailscale (Essential & Plus)."
+  },
+  "tasks": {
+    "label": "Tasks & automations",
+    "title": "Stay on top of the day, without the noise",
+    "sub": "Recurring chores, daily habits, and the repetitive bookkeeping happen automatically, next to your finances and health log. Every automation runs locally, on your machine, with no external API calls.",
+    "row_label": "Tasks & habits",
+    "card1_title": "Recurring tasks",
+    "card1_body": "Daily, weekly, or monthly tasks recreate themselves the moment you check them off. Set it once and it keeps showing up on schedule.",
+    "card1_tier": "All tiers",
+    "card2_title": "Due dates and reminders",
+    "card2_body": "Give any task a due date and an optional reminder time. Overdue items stay highlighted in red until you act on them.",
+    "card2_tier": "Essential & Plus",
+    "card3_title": "Habit streaks, including medication",
+    "card3_body": "Track daily habits side by side with your health log. Mark a habit as medication and it gets its own reminder and a pill icon, so you never miss a dose.",
+    "card3_tier": "All tiers",
+    "card4_title": "One glance from the home screen",
+    "card4_body": "Today's tasks and habits sit on your home dashboard next to budget status and your health log. Nothing to dig for.",
+    "card4_tier": "All tiers",
+    "screenshot_alt": "Tasks list showing recurring tasks, due dates, an overdue item highlighted in red, and a completed task",
+    "screenshot_caption": "Recurring tasks, due dates, and overdue highlighting (all tiers)"
   },
   "automations": {
-    "label": "Automations",
-    "title": "The repetitive parts, handled",
-    "sub": "Every automation runs locally, on your machine, with no external API calls.",
+    "row_label": "Automations",
     "card1_title": "Auto-categorise transactions",
     "card1_body": "Define keyword rules once. Every import is classified automatically (groceries, utilities, subscriptions) without touching a single transaction by hand. Rules can be applied back through your existing history.",
     "card1_tier": "Essential & Plus",
@@ -129,7 +176,9 @@
     "card3_tier": "Essential & Plus",
     "card4_title": "Goal & debt milestone alerts",
     "card4_body": "Set up to two percentage thresholds per goal or debt, say 50% and 100%. Meridian fires a notification the moment a threshold is crossed, triggered automatically as transactions arrive.",
-    "card4_tier": "Plus"
+    "card4_tier": "Plus",
+    "screenshot_alt": "Debt payoff panel showing a 200 euro lump sum applied to a car loan, with the new payoff date and remaining balance",
+    "screenshot_caption": "A matching transaction is detected, the balance updates, and the payoff date moves, automatically (Essential & Plus)"
   },
   "full_tier": {
     "label": "Plus tier",
@@ -143,6 +192,7 @@
     "item3_body": "Query your financial and health data from Claude, Cursor, or any MCP-compatible AI assistant. Read-only, password-protected, entirely local. Your data is the context; nothing is sent to a third party.",
     "item4_title": "Software updates included",
     "item4_body": "Every new Meridian release is delivered automatically while your subscription is active. The app gets better without you doing anything.",
+    "screenshot_alt": "Meridian's savings rate and net worth cards, available from Essential and Plus",
     "badge_soon": "Coming soon",
     "coming_label": "On the roadmap",
     "coming1_title": "Automated bank sync",
@@ -171,14 +221,7 @@
     "full_features_yes": ["Everything in Essential", "Net worth projection + forward chart", "Goal & debt milestone alerts", "Encrypted backup (.enc)", "MCP server (AI assistant integration)", "Admin panel & log viewer", "Software updates included"],
     "full_cta": "Buy now",
     "full_coming_soon": "Coming soon",
-    "footnote": "Trial and Essential are version-locked: the license you buy stays valid for the version installed; no future updates are delivered.\nPlus subscribers receive all software updates while their annual subscription is active."
-  },
-  "download": {
-    "label": "Download",
-    "title": "Download and be running in minutes",
-    "sub": "Install the Electron app on Windows. Your 31-day trial starts on first launch. No credit card, no account.",
-    "windows_label": "Windows · Electron installer",
-    "windows_name": "Download for Windows"
+    "footnote": "Your Essential license is yours forever for the version you bought, with no dependency on our servers to keep working. Updates to future major versions are optional, sold separately.\nPlus subscribers receive all software updates automatically while their annual subscription is active."
   },
   "footer_text": {
     "copyright": "© 2026 Meridian. All rights reserved.",
@@ -191,6 +234,8 @@
     "title": "Privacy Policy — Meridian",
     "back_link": "← Meridian",
     "h1": "Privacy Policy",
+    "effective_date_label": "Effective date",
+    "last_updated_label": "Last updated",
     "effective_date": "2026-06-05",
     "last_updated": "2026-06-05",
     "s1_title": "Overview",
@@ -220,6 +265,7 @@
     "title": "Terms & Conditions — Meridian",
     "back_link": "← Meridian",
     "h1": "Terms & Conditions",
+    "effective_date_label": "Effective date",
     "effective_date": "2026-06-12",
     "contact_lead": "Questions about these terms:",
     "sections": [
@@ -239,6 +285,7 @@
     "title": "Refund Policy — Meridian",
     "back_link": "← Meridian",
     "h1": "Refund Policy",
+    "effective_date_label": "Effective date",
     "effective_date": "2026-06-12",
     "contact_lead": "Questions about refunds:",
     "sections": [

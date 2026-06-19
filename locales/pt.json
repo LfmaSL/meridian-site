@@ -8,7 +8,6 @@
     "import": "Importações",
     "features": "Funcionalidades",
     "pricing": "Preços",
-    "download": "Transferir",
     "support": "Suporte"
   },
   "hero": {
@@ -17,7 +16,8 @@
     "h1_line2": "Privados, automatizados, teus.",
     "subhead": "Importas o extrato do banco, o Meridian trata do resto. Categorias, orçamentos, objetivos, saúde, hábitos. Tudo na tua máquina. Sem contas, sem cloud, sem dados entregues a ninguém.",
     "cta_primary": "Iniciar teste gratuito",
-    "cta_secondary": "Ver preços"
+    "cta_secondary": "Ver preços",
+    "screenshot_alt": "Painel inicial do Meridian, com hábitos, tarefas, estado do orçamento e o registo de saúde de hoje"
   },
   "trust": {
     "local_db": "Dados em <strong>SQLite local</strong>",
@@ -25,7 +25,8 @@
     "no_cloud": "<strong>Sem sincronização</strong> cloud",
     "backup": "<strong>Backup encriptado</strong>: Plus",
     "export": "<strong>Dados abertos</strong>: exporta a qualquer momento",
-    "phone": "<strong>Acesso por telemóvel</strong>: Essential e Plus"
+    "phone": "<strong>Acesso por telemóvel</strong>: Essential e Plus",
+    "mask": "<strong>Modo privado</strong>: oculta todos os valores de imediato"
   },
   "story": {
     "label": "O Meridian, porquê?",
@@ -33,6 +34,7 @@
     "p1": "Tinha folhas de cálculo a mais. Uma para o orçamento, outra para as dívidas, outra para o resto. Todo o mês era a mesma coisa: exportar o extrato do banco, colar colunas, torcer para não ter partido nada. Num fim de semana escrevi um script para fazer isso por mim.",
     "p2": "Depois quis ver os gastos em gráfico. Depois categorias automáticas. A seguir o património líquido e projeções. Depois calendários de dívidas, tarefas, lembretes. Por fim métricas de saúde e hábitos... Já que estava tudo ali, fazia sentido ter o contexto completo num sítio só.",
     "p3": "Nunca planeei fazer uma app. Foi crescendo ao fim de semana, versão a versão. Os dados continuam na minha máquina, a importação mensal continua a ser um clique, e já não há folhas de cálculo nenhumas.",
+    "screenshot_alt": "Painel inicial do Meridian, com hábitos, tarefas, estado do orçamento e o registo de saúde de hoje",
     "card1_title": "As tuas transações, o teu servidor",
     "card1_body": "As apps de finanças leem e processam os teus dados na cloud. O Meridian importa os ficheiros do banco diretamente - nada é transmitido, nada analisado remotamente. Os teus dados ficam na tua máquina.",
     "card2_title": "Automação sem manutenção",
@@ -49,7 +51,8 @@
     "card2_title": "Importações sem duplicados",
     "card2_body": "Cada importação verifica cada transação contra o que já tens — por data, descrição e montante. Reenviar o mesmo ficheiro ou importar intervalos de datas sobrepostos é sempre seguro. O resumo da importação diz-te exatamente o que foi adicionado e o que foi ignorado.",
     "card3_title": "Exports em texto",
-    "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido a partir do histórico de transações — sem ajuste manual de datas."
+    "card3_body": "Ficheiros TXT de largura fixa de portais de homebanking. O ano é inferido a partir do histórico de transações — sem ajuste manual de datas.",
+    "preview_alt": "Pré-visualização da importação com transações categorizadas automaticamente, deteção de duplicados e totais de receitas/despesas"
   },
   "privacy_sec": {
     "label": "Privacidade",
@@ -60,22 +63,19 @@
     "card1_body": "Tudo vive num ficheiro SQLite na tua máquina. Transações, saúde, hábitos, tarefas — nada toca num servidor externo.",
     "card1_items": [
       "SQLite no teu dispositivo",
-      "Sem sincronização, sem backup cloud",
       "Backup encriptado com AES-GCM — do lado do cliente, só a tua palavra-passe"
     ],
     "card2_title": "Sem contas, nunca",
     "card2_body": "Não existe conta Meridian. Sem email, sem sessão nos nossos servidores. O login é feito com passkeys WebAuthn no teu próprio dispositivo — as credenciais ficam no dispositivo.",
     "card2_items": [
       "Autenticação WebAuthn (passkey)",
-      "Credenciais guardadas apenas no dispositivo",
       "Não é necessário email para usar a app"
     ],
     "card3_title": "És dono de tudo",
     "card3_body": "Exportas o teu conjunto de dados completo como JSON a qualquer momento. Migras para outra máquina, fazes backup, auditas — o Meridian não retém nada.",
     "card3_items": [
       "Export JSON completo (todos os planos)",
-      "Import / restauro JSON (Essential e Plus)",
-      "Sem dependência de fornecedor"
+      "Import / restauro JSON (Essential e Plus)"
     ]
   },
   "finance": {
@@ -94,7 +94,7 @@
     "card3_body": "Despesas que aparecem em 3 ou mais dos últimos 6 meses com montantes consistentes são sinalizadas automaticamente — subscrições, serviços, ordens permanentes. Sem etiquetagem manual.",
     "card3_tier": "Todos os planos",
     "card4_title": "Múltiplas contas bancárias",
-    "card4_body": "Importas de qualquer número de contas. As vistas filtram por conta ou mostram tudo combinado. O património líquido inclui todos os saldos automaticamente.",
+    "card4_body": "Importas de qualquer número de contas. As vistas filtram por conta ou mostram tudo combinado. O património líquido inclui todos os saldos automaticamente. Escolhes a tua moeda de visualização (EUR, USD, GBP, CHF) uma vez no perfil.",
     "card4_tier": "Todos os planos",
     "card5_title": "Projeção de património líquido",
     "card5_body": "Ativos versus dívidas ao longo do tempo, num gráfico de área. Construído a partir do histórico de importações — atualiza-se sozinho cada vez que chegam novas transações.",
@@ -102,12 +102,28 @@
     "card6_title": "Taxa de poupança",
     "card6_body": "Média móvel de seis meses, calculada a partir do histórico de rendimentos e despesas. Sem fórmula para manter — atualiza em cada importação.",
     "card6_tier": "Essential & Plus",
-    "card7_title": "Marcos de objetivos e dívidas",
-    "card7_body": "Define limites percentuais em qualquer objetivo ou dívida. O Meridian envia uma notificação push quando cruzas 50% ou chegas a 100% — ativado automaticamente com cada importação.",
+    "card7_title": "Planeamento de objetivos e dívidas",
+    "card7_body": "Testa cenários antes de te comprometeres: uma contribuição mensal diferente, um pagamento único hoje, ou uma data-alvo. Vê a data de conclusão prevista atualizar-se de imediato. Define limites percentuais em qualquer objetivo ou dívida e recebe uma notificação quando os cruzares.",
     "card7_tier": "Plus",
     "card8_title": "Calendários de amortização",
     "card8_body": "Amortização padrão para hipotecas e empréstimos: calendário de pagamentos completo com divisão capital/juros, registo de pagamentos extra e uma palavra-chave que deteta os pagamentos automaticamente na importação.",
-    "card8_tier": "Essential e Plus"
+    "monthly_alt": "Vista mensal: comparação ano a ano, gráfico de categorias e tendência de receitas/despesas a 12 meses",
+    "monthly_caption": "Comparação ano a ano, divisão por categoria e tendências mensais (todos os planos)",
+    "net_worth_caption": "Projeção de património líquido: 6 meses reais, 6 meses à frente (Plus)",
+    "debt_caption": "Calendário de amortização completo, divisão capital/juros e alertas de marcos (Essential e Plus)",
+    "card10_title": "Detalhe por categoria",
+    "card10_body": "Clica em qualquer categoria para ver a tendência de gastos ao longo dos meses e a divisão por comerciante. Descobre o que está realmente a empurrar uma categoria para fora do orçamento, sem exportar nada.",
+    "card10_tier": "Todos os planos",
+    "simulate_caption": "Simulador what-if: uma contribuição mensal diferente ou pagamento único, projetado de imediato (Plus)",
+    "drilldown_caption": "Detalhe por categoria: tendência de gastos e divisão por comerciante para qualquer categoria (todos os planos)",
+    "tab_net_worth": "Projeção de património",
+    "tab_debt": "Amortização",
+    "tab_simulate": "Simulador",
+    "tab_drilldown": "Detalhe por categoria",
+    "card8_tier": "Essential e Plus",
+    "tab_recurring": "Despesas recorrentes",
+    "recurring_caption": "Subscrições e despesas recorrentes detetadas automaticamente, com médias mensais (Essential e Plus)",
+    "also_included": "Também incluído: orçamentos mensais, comparação ano-a-ano e múltiplas contas bancárias (todos os planos), e taxa de poupança (Essential e Plus)."
   },
   "health": {
     "label": "Saúde e hábitos",
@@ -124,12 +140,40 @@
     "card3_tier": "Todos os planos",
     "card4_title": "Acesso pelo telemóvel",
     "card4_body": "Instala como PWA no telemóvel e acede ao Meridian de qualquer dispositivo na tua rede local — ou via Tailscale de qualquer lugar. Sem reencaminhamento de portas, sem relay cloud.",
-    "card4_tier": "Essential e Plus"
+    "card4_tier": "Essential e Plus",
+    "tab_today": "Hoje",
+    "tab_history": "Histórico",
+    "tab_trends": "Tendências",
+    "today_alt": "Métricas de saúde de hoje com a diferença para a meta, ao lado de uma coluna de hábitos com sequências e um item de medicação",
+    "today_caption": "Métricas e hábitos de hoje, registados em segundos (todos os planos)",
+    "history_alt": "Tabela de histórico a 30 dias de métricas de saúde e conclusão de hábitos",
+    "history_caption": "Tabela de histórico a 30/90 dias para cada métrica e hábito (todos os planos)",
+    "trends_alt": "Gráficos de tendência de saúde para peso, sono, humor, água e passos a 30 dias, com grelhas de sequência de hábitos",
+    "trends_caption": "Gráficos de tendência a 30/90 dias para cada métrica, e sequências de hábitos (Essential e Plus)",
+    "also_included": "Também incluído: acesso pelo telemóvel via PWA, na tua rede local ou via Tailscale (Essential e Plus)."
+  },
+  "tasks": {
+    "label": "Tarefas e automações",
+    "title": "O dia sob controlo, sem ruído",
+    "sub": "Tarefas recorrentes, hábitos diários e a contabilidade repetitiva acontecem sozinhas, ao lado das tuas finanças e do registo de saúde. Cada automação corre localmente, na tua máquina, sem chamadas a APIs externas.",
+    "row_label": "Tarefas e hábitos",
+    "card1_title": "Tarefas recorrentes",
+    "card1_body": "Tarefas diárias, semanais ou mensais recriam-se a partir do momento em que as marcas como concluídas. Defines uma vez e elas continuam a aparecer no dia certo.",
+    "card1_tier": "Todos os planos",
+    "card2_title": "Datas limite e recordatórios",
+    "card2_body": "Dás uma data limite a qualquer tarefa, com um recordatório opcional. Os itens em atraso ficam destacados a vermelho até serem resolvidos.",
+    "card2_tier": "Essential e Plus",
+    "card3_title": "Sequências de hábitos, incluindo medicação",
+    "card3_body": "Regista hábitos diários ao lado do teu registo de saúde. Marca um hábito como medicação e ele recebe o seu próprio recordatório e um ícone de comprimido, para nunca falhares uma dose.",
+    "card3_tier": "Todos os planos",
+    "card4_title": "Tudo visível no ecrã inicial",
+    "card4_body": "As tarefas e hábitos de hoje aparecem no dashboard inicial, ao lado do estado do orçamento e do registo de saúde. Nada para procurar.",
+    "card4_tier": "Todos os planos",
+    "screenshot_alt": "Lista de tarefas com tarefas recorrentes, datas limite, um item em atraso destacado a vermelho e uma tarefa concluída",
+    "screenshot_caption": "Tarefas recorrentes, datas limite e destaque de atraso (todos os planos)"
   },
   "automations": {
-    "label": "Automações",
-    "title": "As partes repetitivas, tratadas",
-    "sub": "Cada automação corre localmente, na tua máquina, sem chamadas a APIs externas.",
+    "row_label": "Automações",
     "card1_title": "Categorização automática de transações",
     "card1_body": "Defines as regras por palavra-chave uma vez. Cada importação é classificada automaticamente — mercearias, serviços, subscrições — sem tocar numa transação manualmente. As regras podem ser aplicadas ao histórico existente.",
     "card1_tier": "Essential e Plus",
@@ -141,7 +185,9 @@
     "card3_tier": "Essential e Plus",
     "card4_title": "Alertas de marcos de objetivos e dívidas",
     "card4_body": "Defines até dois limites percentuais por objetivo ou dívida — por exemplo, 50% e 100%. O Meridian notifica quando um limiar é cruzado, ativado automaticamente com cada importação.",
-    "card4_tier": "Plus"
+    "card4_tier": "Plus",
+    "screenshot_alt": "Painel de pagamento de dívida a mostrar um valor único de 200 euros aplicado a um crédito automóvel, com a nova data de liquidação e o saldo restante",
+    "screenshot_caption": "Uma transação correspondente é detetada, o saldo atualiza-se e a data de liquidação avança, tudo automaticamente (Essential e Plus)"
   },
   "full_tier": {
     "label": "Plano Plus",
@@ -155,6 +201,7 @@
     "item3_body": "Consultas os teus dados financeiros e de saúde a partir do Claude, Cursor ou qualquer assistente compatível com MCP. Só de leitura, protegido por palavra-passe, totalmente local.",
     "item4_title": "Atualizações de software incluídas",
     "item4_body": "Cada novo lançamento do Meridian chega automaticamente enquanto a subscrição está ativa. A app melhora sem fazeres nada.",
+    "screenshot_alt": "Cartões de taxa de poupança e património líquido do Meridian, disponíveis a partir do Essential e no Plus",
     "badge_soon": "Em breve",
     "coming_label": "No roadmap",
     "coming1_title": "Sincronização bancária automática",
@@ -219,14 +266,7 @@
     ],
     "full_cta": "Comprar agora",
     "full_coming_soon": "Brevemente",
-    "footnote": "O Teste e o Essential são bloqueados à versão — a licença que compras mantém-se válida para a versão instalada; não há atualizações futuras incluídas.\nOs subscritores Plus recebem todas as atualizações enquanto a subscrição anual estiver ativa."
-  },
-  "download": {
-    "label": "Transferência",
-    "title": "Transfere e começa em minutos",
-    "sub": "Instala no Windows. O teste de 31 dias começa no primeiro arranque — sem cartão de crédito, sem conta.",
-    "windows_label": "Windows · Instalador Electron",
-    "windows_name": "Transferir para Windows"
+    "footnote": "A tua licença Essential é tua para sempre para a versão que compraste, sem dependência dos nossos servidores para continuar a funcionar. Atualizações para versões major futuras são opcionais, vendidas em separado.\nOs subscritores Plus recebem todas as atualizações automaticamente enquanto a subscrição anual estiver ativa."
   },
   "footer_text": {
     "copyright": "© 2026 Meridian. Todos os direitos reservados.",
@@ -239,6 +279,8 @@
     "title": "Política de Privacidade — Meridian",
     "back_link": "← Meridian",
     "h1": "Política de Privacidade",
+    "effective_date_label": "Data de entrada em vigor",
+    "last_updated_label": "Última atualização",
     "effective_date": "2026-06-05",
     "last_updated": "2026-06-05",
     "s1_title": "Resumo",
@@ -273,6 +315,7 @@
     "title": "Termos e Condições — Meridian",
     "back_link": "← Meridian",
     "h1": "Termos e Condições",
+    "effective_date_label": "Data de entrada em vigor",
     "effective_date": "2026-06-12",
     "contact_lead": "Questões sobre estes termos:",
     "sections": [
@@ -292,6 +335,7 @@
     "title": "Política de Reembolsos — Meridian",
     "back_link": "← Meridian",
     "h1": "Política de Reembolsos",
+    "effective_date_label": "Data de entrada em vigor",
     "effective_date": "2026-06-12",
     "contact_lead": "Questões sobre reembolsos:",
     "sections": [

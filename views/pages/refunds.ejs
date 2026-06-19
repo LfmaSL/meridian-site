@@ -5,7 +5,7 @@
 <div class="privacy-wrap" style="margin: 2rem auto;">
   <a class="back" href="/<%= locale %>/"><%- c.refunds_page.back_link %></a>
   <h1><%= c.refunds_page.h1 %></h1>
-  <p class="meta">Effective date: <%= c.refunds_page.effective_date %></p>
+  <p class="meta"><%= c.refunds_page.effective_date_label %>: <%= c.refunds_page.effective_date %></p>
 
   <% c.refunds_page.sections.forEach(function(s) { %>
     <h2><%= s.title %></h2>

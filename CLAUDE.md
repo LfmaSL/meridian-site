@@ -114,8 +114,11 @@ dev:   node --watch server.js
     TLS: auto via Let's Encrypt once DNS propagates
 
   marketing (needs assets):
-    product screenshots — none on page, biggest conversion gap
     social proof — story section claims users with no evidence
+    screenshot inventory: ../meridian/scripts/capture-screenshots.js generates 26 PNGs into public/screenshots/
+      sections now using them: hero, import, finance (6-tab showcase), health (3-tab showcase), tasks, automations, full_tier, story
+      unused-but-available: settings-layout, settings-data, settings-notifications, home-layout-alt, tutorial, account-selector,
+        transactions-list, category-trend-chart — candidates for a future "make it yours"/onboarding section
 
 ---
 
